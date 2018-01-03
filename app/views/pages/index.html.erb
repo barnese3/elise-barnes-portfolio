@@ -1,0 +1,95 @@
+<% @title="Home | Elise Barnes" %>
+
+<div class="hero-image">
+	<div class="hero-text css-typing">
+		<p>Hi, I'm Elise Barnes.</p>
+		<p>I'm a Full Stack Web Developer.</p>
+		<%= link_to "<button>Let's Chat</button>".html_safe, contact_path %>
+	</div>
+</div>
+
+<div class="home-desc">
+	<p>Hello there. My name's Elise and I’m a Junior Full Stack Web Developer, gung ho about the front-end. I have experience with managing brands (both personal and for a company), managing social media accounts, and making people happy. I am passionate about transforming client visions into tangible websites that truly represent the core of their business and mission.</p>
+</div>
+
+<div class="quote-image">
+	<div class="quote-text scroll-show">
+		<p><em>“I think the foremost quality – there’s no success without it – is really loving what you do. If you love it, you do it well, and there’s no success if you don’t do well what you’re working at.”</em></p>
+
+		<p>- Malcolm Forbes</p>
+	</div>
+</div>
+
+<h2 class="portfolio-header"><span>Recent Work</span></h2>
+
+<p class="coming-soon-home"><em>This website is still a work in progress, <strong>projects coming soon!</strong></em></p>
+
+<div class="home-portfolio">
+	<div class="content scroll-show-portfolio">
+		<a href="#">
+			<div class="content-overlay"></div>
+			<div class="portfolio-item1"></div>
+			<div class="content-details fadeIn-top">
+        		<h3 class="content-title">This is a title</h3>
+        		<p class="content-text">This is a short description</p>
+      		</div>
+		</a>
+	</div>
+
+		<div class="content scroll-show-portfolio">
+		<a href="#">
+			<div class="content-overlay"></div>
+			<div class="portfolio-item2"></div>
+			<div class="content-details fadeIn-top">
+        		<h3 class="content-title">This is a title</h3>
+        		<p class="content-text">This is a short description</p>
+      		</div>
+		</a>
+	</div>
+
+		<div class="content scroll-show-portfolio">
+		<a href="#">
+			<div class="content-overlay"></div>
+			<div class="portfolio-item3"></div>
+			<div class="content-details fadeIn-top">
+        		<h3 class="content-title">This is a title</h3>
+        		<p class="content-text">This is a short description</p>
+      		</div>
+		</a>
+	</div>
+</div>
+
+<div class="portfolio-btn-contain">
+	<%= link_to "<button>View Portfolio</button>".html_safe, portfolio_path %>
+</div>
+
+<button class="top"><i class="fa fa-arrow-up"></i></button>
+
+<script>
+// back to top button
+$(document).ready(function() {
+    $(function(){
+        $.fn.scrollToTop=function(){
+            $(this).hide().removeAttr("href");
+            if($(window).scrollTop()!="0"){
+                $(this).fadeIn("slow")
+            }
+            var scrollDiv=$(this);
+            $(window).scroll(function(){
+                if($(window).scrollTop()=="0"){
+                    $(scrollDiv).fadeOut("slow")
+                }else{
+                    $(scrollDiv).fadeIn("slow")
+                }
+            });
+            $(this).click(function(){
+                $("html, body").animate({scrollTop:0},"slow")
+            }
+            )}
+        });
+            
+    $(function(){
+        $(".top").scrollToTop();
+    });
+});
+</script>
