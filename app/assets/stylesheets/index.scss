@@ -6,8 +6,7 @@ $font: 'Questrial', sans-serif;
 
 .hero-image {
 	position: relative;
-	max-width: 100%;
-	height: 500px;
+	height: 80vh;
 	background-image: url("https://images.unsplash.com/photo-1464061884326-64f6ebd57f83?auto=format&fit=crop&w=1050&q=80");
     background-size: cover;
     background-position: center;
@@ -20,6 +19,7 @@ $font: 'Questrial', sans-serif;
     	bottom: 0;
     	position: absolute;
     	font-family: $font;
+    	width: 100%;
 
 		a {
 			text-decoration: none;
@@ -52,7 +52,7 @@ $font: 'Questrial', sans-serif;
 .css-typing p:nth-child(1) {
   font: 80px $font;
   letter-spacing: 2px;
-  width: 9.5em;
+  width: 9em;
   -webkit-animation: type 2s steps(40, end);
   animation: type 2s steps(40, end);
   -webkit-animation-fill-mode: forwards;
@@ -61,7 +61,7 @@ $font: 'Questrial', sans-serif;
 
 .css-typing p:nth-child(2) {
   font-size: 30px;
-  width: 14.3em;
+  width: 14em;
   opacity: 0;
   -webkit-animation: type2 2s steps(40, end),
   	blink-caret .5s step-end infinite alternate;
@@ -352,4 +352,49 @@ $font: 'Questrial', sans-serif;
 .coming-soon-home {
 	font: $font;
 	text-align: center;
+}
+
+@media (max-width: 850px) {
+	.home-desc p {
+	    width: 95%;
+	    font-size: 20px;
+	    padding: 0 30px;
+	}
+}
+
+@media (max-width: 1340px) {
+	.content {
+		width: 100%;
+	}
+}
+
+@media (max-width: 775px) {
+	.css-typing p:nth-child(1) {
+		width: 10em;
+		font-size: 50px;
+	}
+
+	.css-typing p:nth-child(2) {
+		width: 14.2em;
+	}
+}
+
+@media (max-width: 510px) {
+	.css-typing p:nth-child(1) {
+		font-size: 40px;
+	}
+
+	.css-typing p:nth-child(2) {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 410px) {
+	.css-typing p:nth-child(1) {
+		font-size: 30px;
+	}
+
+	.css-typing p:nth-child(2) {
+		font-size: 15px;
+	}
 }
