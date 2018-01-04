@@ -17,7 +17,7 @@ $font: 'Questrial', sans-serif;
     padding: 1%;
 
     .portfolio-text {
-        width: 50%;
+        // width: 50%;
     	top: 1%;
         right: 1%;
         text-align: right;
@@ -51,4 +51,12 @@ $font: 'Questrial', sans-serif;
 
 .portfolio-items {
     margin-bottom: 5%;
+}
+
+@media (max-width: 850px) {
+    .portfolio-desc p {
+        width: 95%;
+        font-size: 20px;
+        padding: 0 30px;
+    }
 }

@@ -106,3 +106,19 @@ $font: 'Questrial', sans-serif;
     font-size: 20px;
     font-family: $font;
 }
+
+@media (max-width: 950px) {
+    #contact-form .submit {
+        width: 40%;
+    }
+}
+
+@media (max-width: 850px) {
+    .contact-desc p {
+        width: 95%;
+    }
+
+    #contact-form {
+        width: 85%;
+    }
+}

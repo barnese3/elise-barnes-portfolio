@@ -40,7 +40,7 @@ $font: 'Questrial', sans-serif;
     }
 
     p {
-        text-align: justify;
+        text-align: center;
     }
 
     h5 {
@@ -110,5 +110,11 @@ $font: 'Questrial', sans-serif;
         background-color: $accent;
         color: #fff;
         border-color: $accent;
+    }
+}
+
+@media (max-width: 850px) {
+    .about-main p, .about-main h5 {
+        width: 95%;
     }
 }
