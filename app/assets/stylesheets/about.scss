@@ -45,7 +45,7 @@ $font: 'Questrial', sans-serif;
 
     h5 {
         text-align: center;
-        margin-top: 1%;
+        margin-top: 70px;
     }
 }
 
@@ -73,6 +73,7 @@ $font: 'Questrial', sans-serif;
     width: 100%;
     text-align: center;
     margin-top: 1%;
+    margin-bottom: 40px;
     color: $accent;
 }
 .bounce {
@@ -100,16 +101,18 @@ $font: 'Questrial', sans-serif;
 .about-button {
     text-align: center;
     margin-top: 5%;
+    margin-bottom: 150px;
 
     button {
-        border-color: $accent;
-        color: $accent;
-    }
-
-    button:hover {
         background-color: $accent;
         color: #fff;
         border-color: $accent;
+    }
+
+    button:hover {
+        background-color: transparent;
+        border-color: $accent;
+        color: $accent;
     }
 }
 

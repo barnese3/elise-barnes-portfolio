@@ -19,7 +19,6 @@ $font: 'Questrial', sans-serif;
     	bottom: 0;
     	position: absolute;
     	font-family: $font;
-    	width: 100%;
 
 		a {
 			text-decoration: none;
@@ -164,7 +163,7 @@ $font: 'Questrial', sans-serif;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 
     .quote-text {
     	position: absolute;
@@ -320,15 +319,17 @@ $font: 'Questrial', sans-serif;
 	}
 
 	button {
-		color: #DDC8C4;
-		border-color: #DDC8C4;
+		background-color: $accent;
+		color: #fff;
+		border-color: $accent;
+		margin-bottom: 7em;
 	}
 
 	button:hover,
 	button:hover > a {
-		background-color: $accent;
-		color: #fff;
-		border-color: $accent;
+		color: #DDC8C4;
+		border-color: #DDC8C4;
+		background-color: transparent;
 	}
 }
 
@@ -341,6 +342,8 @@ $font: 'Questrial', sans-serif;
 	font-size: 15px;
 	color: #DDC8C4;
 	border-color: #DDC8C4;
+	padding: 0 12px;
+	letter-spacing: 0;
 }
 
 .top:hover {

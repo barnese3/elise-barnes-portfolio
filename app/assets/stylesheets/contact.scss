@@ -9,7 +9,7 @@ $font: 'Questrial', sans-serif;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin-bottom: 5%;
+    margin-bottom: 60px;
     padding: 1%;
 
     .contact-text {
@@ -32,7 +32,7 @@ $font: 'Questrial', sans-serif;
 }
 
 .contact-desc {
-    margin-bottom: 5%;
+    margin-bottom: 60px;
 
     p {
         width: 50%;
@@ -44,7 +44,7 @@ $font: 'Questrial', sans-serif;
 .social-icons {
     width: 100%;
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 60px;
 
     i {
         color: $accent;
@@ -70,6 +70,7 @@ $font: 'Questrial', sans-serif;
     font-family: $font;
     width: 50%;
     margin: 0 auto;
+    padding-bottom: 150px;
 
     input,
     textarea {
@@ -88,7 +89,8 @@ $font: 'Questrial', sans-serif;
     }
 
     .submit {
-        color: $accent;
+        color: #fff;
+        background-color: $accent;
         border-color: $accent;
         width: 20%;
         margin: 0 auto;
@@ -96,8 +98,9 @@ $font: 'Questrial', sans-serif;
     }
 
     .submit:hover {
-        color: #fff;
-        background-color: $accent;
+        background-color: transparent;
+        color: $accent;
+        border-color: $accent;
     }
 }
 

@@ -40,7 +40,38 @@
 
     <%= yield %>
     <footer>
-      © 2017 Elise Barnes
+      <div class="container">
+        <div class="row">
+          <div class="one-third column">
+            <div class="elise">
+              © 2017 Elise Barnes
+            </div>
+          </div>
+
+          <div class="one-third column">
+            <div class="footer-nav">
+              <ul>
+                <li><%= link_to "Home", root_path %></li>
+                <li><%= link_to "About Me", about_me_path %></li>
+                <li><%= link_to "Portfolio", portfolio_path %></li>
+                <li><%= link_to "Contact", contact_path %></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="one-third column">
+            <div class="footer-social">
+              <a href="https://www.facebook.com/thenaturalwaytowellness" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/thenaturalwaytowellness/" target="_blank"><i class="fa fa-instagram"></i></a>
+              <a href="https://twitter.com/naturalwaywell" target="_blank"><i class="fa fa-twitter"></i></a>
+              <a href="mailto:barnese3@go.stockton.edu"><i class="fa fa-envelope-o"></i></a>
+              <a href="https://www.linkedin.com/in/elise-barnes-180680b2/" target="_blank"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/barnese3" target="_blank"><i class="fa fa-github"></i></a>
+            </div>
+          </div>
+
+        </div><!--  end of row -->
+      </div><!--  end of container -->
     </footer>
   </body>
 </html>
