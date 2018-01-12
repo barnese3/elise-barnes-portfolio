@@ -241,6 +241,7 @@ html {
   bottom: 35px;
   z-index: 1;
   pointer-events: none;
+  border-bottom: 1px solid #000;
 }
 
 .mobile-nav::before {
@@ -272,7 +273,6 @@ html {
 .mobile-nav li {
   display: block;
   overflow: hidden;
-  font-family: $font;
   font-weight: 200;
   font-size: 26px;
   line-height: 36px;
@@ -286,6 +286,7 @@ html {
 
 .mobile-nav li a {
   color: #000;
+  font-family: $font;
   display: inline-block;
   overflow: hidden;
   position: relative;
