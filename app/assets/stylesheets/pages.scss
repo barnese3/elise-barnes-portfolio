@@ -241,7 +241,6 @@ html {
   bottom: 35px;
   z-index: 1;
   pointer-events: none;
-  border-bottom: 1px solid #000;
 }
 
 .mobile-nav::before {
@@ -252,6 +251,7 @@ html {
   left: -10px;
   right: 0;
   background: #fff;
+  border-bottom: 1px solid #000;
   transform: rotateY(90deg);
   transition: transform 350ms;
   transform-origin: 0 0;
