@@ -59,3 +59,9 @@ $font: 'Questrial', sans-serif;
         padding: 0 30px;
     }
 }
+
+@media (max-width: 775px) {
+    .portfolio-image {
+        background-attachment: scroll;
+    }
+}

@@ -122,3 +122,9 @@ $font: 'Questrial', sans-serif;
         width: 95%;
     }
 }
+
+@media (max-width: 775px) {
+    .about-image {
+        background-attachment: scroll;
+    }
+}

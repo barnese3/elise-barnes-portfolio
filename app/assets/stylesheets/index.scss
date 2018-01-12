@@ -10,7 +10,7 @@ $font: 'Questrial', sans-serif;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
+    background-attachment: fixed;
     margin-bottom: 5%;
     padding: 1%;
 
@@ -386,7 +386,11 @@ $font: 'Questrial', sans-serif;
 	}
 
 	.css-typing p:nth-child(2) {
-		width: 14.2em;
+		width: 16em;
+	}
+
+	.hero-image {
+		background-attachment: scroll;
 	}
 }
 
@@ -397,15 +401,12 @@ $font: 'Questrial', sans-serif;
 
 	.css-typing p:nth-child(2) {
 		font-size: 20px;
+		width: 17.5em;
 	}
 }
 
 @media (max-width: 410px) {
 	.css-typing p:nth-child(1) {
 		font-size: 35px;
-	}
-
-	.css-typing p:nth-child(2) {
-		font-size: 18px;
 	}
 }

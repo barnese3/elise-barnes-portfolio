@@ -126,3 +126,9 @@ $font: 'Questrial', sans-serif;
         width: 85%;
     }
 }
+
+@media (max-width: 775px) {
+    .contact-image {
+        background-attachment: scroll;
+    }
+}
