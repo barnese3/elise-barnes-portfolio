@@ -100,10 +100,11 @@ $font: 'Questrial', sans-serif;
 
 .about-button {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 65px;
     margin-bottom: 150px;
 
     button {
+        border-radius: 0px;
         background-color: $accent;
         color: #fff;
         border-color: $accent;

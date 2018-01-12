@@ -1,7 +1,6 @@
 $accent: #DDC8C4;
 $font: 'Questrial', sans-serif;
 
-// @-webkit-keyframes typing { from { width: 0; } }
 @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
 
 .hero-image {
@@ -23,21 +22,27 @@ $font: 'Questrial', sans-serif;
 		a {
 			text-decoration: none;
 			color: #000;
-			font-size: 18px;
 			text-transform: capitalize;
 			font-style: italic;
+			font-family: $font;
+			font-weight: 900;
 
 			button {
-				color: #DDC8C4;
-    			border-color: #DDC8C4;
-				font-family: $font;
+				border-radius: 0px;
+				border-width: 2px;
+				color: #fff;
+	    		border-color: #fff;
+	    		background-color: transparent;
+	    		font-size: 13px;
 			}
     	}
 
     	button:hover,
     	button:hover > a {
+    		
     		background-color: $accent;
-    		color: #fff;
+			color: #fff;
+			border-color: #DDC8C4;
     	}
     }
 }
@@ -47,27 +52,27 @@ $font: 'Questrial', sans-serif;
   white-space: nowrap;
   overflow: hidden;
   color: #fff;
+  letter-spacing: 2px;
 }
 .css-typing p:nth-child(1) {
   font: 80px $font;
-  letter-spacing: 2px;
-  width: 9em;
-  -webkit-animation: type 2s steps(40, end);
-  animation: type 2s steps(40, end);
+  width: 9.5em;
+  -webkit-animation: type 3s steps(40, end);
+  animation: type 3s steps(40, end);
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
 .css-typing p:nth-child(2) {
   font-size: 30px;
-  width: 14em;
+  width: 16.2em;
   opacity: 0;
-  -webkit-animation: type2 2s steps(40, end),
+  -webkit-animation: type2 3s steps(40, end),
   	blink-caret .5s step-end infinite alternate;
-  animation: type2 2s steps(40, end),
+  animation: type2 3s steps(40, end),
   	blink-caret .5s step-end infinite alternate;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -319,6 +324,7 @@ $font: 'Questrial', sans-serif;
 	}
 
 	button {
+		border-radius: 0px;
 		background-color: $accent;
 		color: #fff;
 		border-color: $accent;
@@ -334,6 +340,7 @@ $font: 'Questrial', sans-serif;
 }
 
 .top {
+	border-radius: 0px;
 	z-index: 100;
 	position: fixed;
 	bottom: 5px;
@@ -355,6 +362,7 @@ $font: 'Questrial', sans-serif;
 .coming-soon-home {
 	font: $font;
 	text-align: center;
+	padding: 20px;
 }
 
 @media (max-width: 850px) {

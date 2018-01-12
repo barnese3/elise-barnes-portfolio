@@ -300,13 +300,10 @@ html {
   height: 2px;
   opacity: .5;
   background: $accent;
-  // transform: translateX(-220px);
-  // transition: all 200ms 50ms;
 }
+
 .mobile-nav li a:hover::after {
   opacity: 1;
-  // transform: translateX(0);
-  // transition: all 400ms 100ms;
 }
 
 
