@@ -82,5 +82,12 @@
 <script>
 $('#menu-button').on('click', function() {
   $(document.body).toggleClass('menu-open');
+  if ($(".mobile-nav").height() == 0) {
+           $(".mobile-nav").animate(
+               {height: "100vh"});
+           }
+        else if ($(".mobile-nav").height() === "100vh") {
+           $(".mobile-nav").animate({height: "0%"});
+           }
 });
 </script>
