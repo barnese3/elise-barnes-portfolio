@@ -6,7 +6,7 @@ $font: 'Questrial', sans-serif;
 .hero-image {
 	position: relative;
 	height: 70vh;
-	background-image: url("https://images.unsplash.com/photo-1464061884326-64f6ebd57f83?auto=format&fit=crop&w=1050&q=80");
+	background-image: url("https://images.pexels.com/photos/543368/pexels-photo-543368.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -164,7 +164,7 @@ $font: 'Questrial', sans-serif;
 	position: relative;
 	max-width: 100%;
 	height: 500px;
-	background-image: url("https://images.unsplash.com/photo-1447075431787-68801189fbe2?auto=format&fit=crop&w=1050&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+	background-image: url("https://images.pexels.com/photos/144251/yosemite-national-park-landscape-california-144251.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -181,6 +181,7 @@ $font: 'Questrial', sans-serif;
     		color: white;
     		text-align: center;
     		font-family: $font;
+    		font-size: 18px;
     	}
     }
 }
@@ -268,7 +269,7 @@ $font: 'Questrial', sans-serif;
 	}
 
 .content:hover .content-overlay{
-	opacity: 0.9;
+	opacity: 1;
 }
 
 .content-details {
@@ -369,23 +370,63 @@ $font: 'Questrial', sans-serif;
 	}
 }
 
-@media (max-width: 1340px) {
+@media (max-width: 1345px) {
 	.content {
 		width: 100%;
+	}
+
+	.home-portfolio .portfolio-item1, 
+	.home-portfolio .portfolio-item2, 
+	.home-portfolio .portfolio-item3,
+	.content .content-overlay {
+		width: 50%;
+	}
+}
+
+@media (max-width: 1030px) {
+
+	.home-portfolio .portfolio-item1, 
+	.home-portfolio .portfolio-item2, 
+	.home-portfolio .portfolio-item3,
+	.content .content-overlay {
+		width: 65%;
+	}
+}
+
+@media (max-width: 750px) {
+
+	.home-portfolio .portfolio-item1, 
+	.home-portfolio .portfolio-item2, 
+	.home-portfolio .portfolio-item3,
+	.content .content-overlay {
+		width: 80%;
+	}
+}
+
+@media (max-width: 575px) {
+
+	.home-portfolio .portfolio-item1, 
+	.home-portfolio .portfolio-item2, 
+	.home-portfolio .portfolio-item3,
+	.content .content-overlay {
+		width: 97%;
+	}
+}
+
+@media (max-width: 575px) {
+
+	.home-portfolio .portfolio-item1, 
+	.home-portfolio .portfolio-item2, 
+	.home-portfolio .portfolio-item3,
+	.content {
+		height: 225px;
 	}
 }
 
 @media (max-width: 1024px) {
+	.content .content-overlay,
 	.content-details {
-		opacity: 1;
-	}
-
-	.content .content-overlay {
-		opacity: 0.85;
-	}
-
-	.fadeIn-top {
-	    top: 50%;
+		opacity: 0;
 	}
 }
 
