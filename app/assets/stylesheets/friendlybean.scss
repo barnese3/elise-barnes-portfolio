@@ -1,0 +1,107 @@
+$accent: #DDC8C4;
+$font: 'Questrial', sans-serif;
+
+.coffee-image {
+	position: relative;
+	height: 70vh;
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.15), 
+      rgba(0, 0, 0, 0.15)
+    ), url("https://images.pexels.com/photos/6067/coffee-flower-reading-magazine.jpg?w=1260&h=750&auto=compress&cs=tinysrgb");
+	// background-image: url("https://images.pexels.com/photos/6067/coffee-flower-reading-magazine.jpg?w=1260&h=750&auto=compress&cs=tinysrgb");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 5%;
+    padding: 1%;
+
+    .coffee-text {
+    	bottom: 0;
+    	position: absolute;
+    	font-family: $font;
+
+    	h1, p {
+    		color: #fff;
+    		font-family: $font;
+    	}
+
+    	h1 {
+    		font-size: 70px;
+    	}
+
+    	p {
+    		font-size: 30px;
+    	}
+
+		a {
+			text-decoration: none;
+			color: #000;
+			text-transform: capitalize;
+			font-style: italic;
+			font-family: $font;
+			font-weight: 900;
+
+			button {
+				border-radius: 0px;
+				border-width: 2px;
+				color: #fff;
+	    		border-color: #fff;
+	    		background-color: transparent;
+	    		font-size: 13px;
+	    		line-height: 0;
+			}
+    	}
+
+    	button:hover,
+    	button:hover > a {
+    		
+    		background-color: $accent;
+			color: #fff;
+			border-color: $accent;
+			-webkit-transition-property: all;
+	        -moz-transition-property: all;
+	        transition-property: all;
+	        -webkit-transition-duration: .4s;
+	        -moz-transition-duration: .4s;
+	        transition-duration: .4s;
+	        -webkit-transition-timing-function: ease-in-out;
+	        transition-timing-function: ease-in-out;
+    	}
+    }
+}
+
+.coffee-lang {
+	border-left: 4px solid $accent;
+	margin-left: 15%;
+	margin-bottom: 20px;
+
+	p {
+		margin: 0 0 0 10px;
+		font-family: $font;
+	}
+}
+
+.coffee-desc {
+	width: 70%;
+	margin: 0 auto 160px;
+	font-family: $font;
+
+	a {
+		color: $accent;
+	}
+}
+
+@media (max-width: 400px) {
+	.coffee-image .coffee-text {
+
+    	h1 {
+    		font-size: 50px;
+    	}
+
+    	p {
+    		font-size: 25px;
+    	}
+	}
+}

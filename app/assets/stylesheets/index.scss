@@ -44,6 +44,14 @@ $font: 'Questrial', sans-serif;
     		background-color: $accent;
 			color: #fff;
 			border-color: #DDC8C4;
+			-webkit-transition-property: all;
+	        -moz-transition-property: all;
+	        transition-property: all;
+	        -webkit-transition-duration: .4s;
+	        -moz-transition-duration: .4s;
+	        transition-duration: .4s;
+	        -webkit-transition-timing-function: ease-in-out;
+	        transition-timing-function: ease-in-out;
     	}
     }
 }
@@ -337,6 +345,14 @@ $font: 'Questrial', sans-serif;
 		color: #DDC8C4;
 		border-color: #DDC8C4;
 		background-color: transparent;
+		-webkit-transition-property: all;
+        -moz-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: .4s;
+        -moz-transition-duration: .4s;
+        transition-duration: .4s;
+        -webkit-transition-timing-function: ease-in-out;
+        transition-timing-function: ease-in-out;
 	}
 }
 
@@ -358,6 +374,14 @@ $font: 'Questrial', sans-serif;
 	background-color: $accent;
 	color: #fff;
 	border-color: $accent;
+	-webkit-transition-property: all;
+    -moz-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .4s;
+    -moz-transition-duration: .4s;
+    transition-duration: .4s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
 }
 
 @media (max-width: 850px) {

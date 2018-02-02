@@ -18,6 +18,17 @@ $font: 'Questrial', sans-serif;
 	width: 70%;
 }
 
+.where-to-lang {
+	border-left: 4px solid $accent;
+	width: 100px;
+    margin: 0 auto 50px;
+
+	p {
+		margin: 0 0 0 10px;
+		font-family: $font;
+	}
+}
+
 @media (max-width: 680px) {
 	iframe {
 	    width: 500px;

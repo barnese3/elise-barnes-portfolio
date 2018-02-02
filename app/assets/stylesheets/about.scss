@@ -114,6 +114,14 @@ $font: 'Questrial', sans-serif;
         background-color: transparent;
         border-color: $accent;
         color: $accent;
+        -webkit-transition-property: all;
+        -moz-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: .4s;
+        -moz-transition-duration: .4s;
+        transition-duration: .4s;
+        -webkit-transition-timing-function: ease-in-out;
+        transition-timing-function: ease-in-out;
     }
 }
 

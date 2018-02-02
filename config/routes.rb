@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get '/portfolio' => 'pages#portfolio'
   get '/contact' => 'pages#contact'
   get '/whereto' => 'pages#whereto'
+  get '/friendlybean' => 'pages#friendlybean'
 end
