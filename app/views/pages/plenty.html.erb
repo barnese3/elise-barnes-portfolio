@@ -1,0 +1,60 @@
+<% @title="Plenty | Portfolio" %>
+
+<div class="plenty-image"></div>
+
+<div class="coffee-lang">
+		<p> HTML </p>
+		<p> CSS </p>
+		<p> JavaScript </p>
+		<p> JQuery </p>
+		<p> Ruby </p>
+		<p> Rails </p>
+		<p> Sass </p>
+		<p> Responsive </p>
+</div>
+
+<div class="plenty-images">
+	<img src="assets/plenty-fullsite.png" id="fullscreen-img" class="plenty-fullsite" />
+</div>
+
+<div class="coffee-desc">
+
+	<p>PLENTY is a web/mobile app I collaborated on as a student at the New York Code + Design Academy in November 2017. PLENTY aims to address the growing problem of food waste produced by restaurants. With the PLENTY app/website, customers can access member restaurants daily discounts based on their supply as their closing hours approach. Restaurants also have the option to donate their unsold food items to local charities via pickups made by the team at PLENTY. This project has two interfaces: one for customers and one for restaurants. The customer interface allows the user to access which restaurants are on discount via the Google Maps API. Users can create an account and develop a list of their favorite restaurants. The restaurant interface allows the restaurant to add their menu's to the website, display which items are on discount, for a set amount of time. They can also send out a request for pickup if they wish to donate their unsold food items.</p>
+
+	<p>My role on this project was to design and develop the landing page you see above.</p>
+
+	<p><a href="https://github.com/Daniel1995db/Plenty" target="_blank">View Code on GitHub</a></p>
+
+</div>
+
+<div class="portfolio-btn-contain">
+	<%= link_to "<button>Back to Portfolio</button>".html_safe, portfolio_path %>
+</div>
+
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="fullscreen-modal">
+</div>
+
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('modal');
+
+// Get the image and insert it inside the modal
+var img = document.getElementById('fullscreen-img');
+var modalImg = document.getElementById("fullscreen-modal");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
