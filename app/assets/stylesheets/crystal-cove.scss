@@ -1,0 +1,185 @@
+$accent: #DDC8C4;
+$font: 'Questrial', sans-serif;
+
+.crystal-image {
+	position: relative;
+	height: 70vh;
+	background-image: image-url("crystal-cove-image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 5%;
+    padding: 1%;
+
+    .crystal-text {
+    	bottom: 0;
+    	position: absolute;
+    	font-family: $font;
+
+    	p {
+    		color: #fff;
+    		font-family: $font;
+    	}
+
+    	h1 {
+    		font-size: 15vh;
+    		padding-right: 10px;
+    		font-family: 'Dancing Script', cursive;
+    		color: #fff;
+    	}
+
+    	p {
+    		font-size: 30px;
+    	}
+
+		a {
+			text-decoration: none;
+			color: #000;
+			text-transform: capitalize;
+			font-style: italic;
+			font-family: $font;
+			font-weight: 900;
+
+			button {
+				border-radius: 0px;
+				border-width: 2px;
+				color: #fff;
+	    		border-color: #fff;
+	    		background-color: transparent;
+	    		font-size: 13px;
+	    		line-height: 0;
+			}
+    	}
+
+    	button:hover,
+    	button:hover > a {
+    		
+    		background-color: $accent;
+			color: #fff;
+			border-color: $accent;
+			-webkit-transition-property: all;
+	        -moz-transition-property: all;
+	        transition-property: all;
+	        -webkit-transition-duration: .4s;
+	        -moz-transition-duration: .4s;
+	        transition-duration: .4s;
+	        -webkit-transition-timing-function: ease-in-out;
+	        transition-timing-function: ease-in-out;
+    	}
+    }
+}
+
+.crystal-lang {
+	border-left: 4px solid $accent;
+	margin-left: 15%;
+	margin-bottom: 20px;
+
+	p {
+		margin: 0 0 0 10px;
+		font-family: $font;
+	}
+}
+
+.crystal-desc {
+	width: 70%;
+	margin: 0 auto 160px;
+	font-family: $font;
+
+	a {
+		color: $accent;
+	}
+}
+
+.crystal-images {
+    margin: 0 auto 100px;
+    text-align: center;
+
+    .crystal-fullsite {
+        height: 40%;
+        width: 40%;
+        margin-top: 30px;
+        padding: 3%;
+        vertical-align: top;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .crystal-fullsite:hover {
+    	opacity: 0.7;
+    }
+}
+
+.modal2 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content2 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    padding-bottom: 10%;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+.close2 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content2 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+	.crystal-image .crystal-text {
+
+    	h1 {
+    		font-size: 50px;
+    	}
+
+    	p {
+    		font-size: 25px;
+    	}
+	}
+}
+
+@media (max-width: 775px) {
+	.crystal-image {
+		background-attachment: scroll;
+	}
+}
