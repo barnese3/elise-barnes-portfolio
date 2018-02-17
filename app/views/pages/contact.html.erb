@@ -47,6 +47,8 @@ $contactForm.submit(function(e) {
         success: function(data) {
             $contactForm.find('.alert--loading').hide();
             $contactForm.append('<div class="alert alert--success">Your mesage has been sent! I will reply within 24 hours. Thank you!</div>');
+            $("#contact-form input").css("display", "none");
+            $("#contact-form textarea").css("display", "none");
         },
         error: function(err) {
             $contactForm.find('.alert--loading').hide();
