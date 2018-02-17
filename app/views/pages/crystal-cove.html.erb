@@ -1,0 +1,62 @@
+<% @title="The Inn at Crystal Cove | Portfolio" %>
+
+<div class="crystal-image">
+	<div class="crystal-text">
+		<h1>The Inn at Crystal Cove</h1>
+		<p>Re-Design for an Inn near Boston, Massachusetts.</p>
+		<a href="https://barnese3.github.io/" target="_blank"><button>Visit Live Site</button></a>
+	</div>
+</div>
+
+<div class="crystal-lang">
+		<p> HTML </p>
+		<p> CSS </p>
+		<p> JavaScript </p>
+		<p> JQuery </p>
+		<p> Mobile Responsive </p>
+</div>
+
+<div class="crystal-desc">
+
+	<p>The Inn at Crystal Cove is an inn Located in the quaint seaside community of Winthrop, Massachusetts, minutes away from Boston. I am currently working on a redesign to make the site modern and mobile friendly. Their current site can be viewed <a href="http://www.inncrystalcove.com/index.htm" target="_blank">here</a>. Below are images of the landing page before and after my redesign.</p>
+
+	<p><a href="https://github.com/barnese3/barnese3.github.io" target="_blank">View Code on GitHub</a></p>
+
+	<div class="crystal-images">
+		<%= image_tag "crystal-cove-before.png", :class => "crystal-fullsite" %>
+		<%= image_tag "crystal-cove-after.png", :class => "crystal-fullsite" %>
+	</div>
+
+</div>
+
+<div class="portfolio-btn-contain">
+	<%= link_to "<button>Back to Portfolio</button>".html_safe, portfolio_path %>
+</div>
+
+
+<div id="modal2" class="modal2">
+  <span class="close2">&times;</span>
+  <img class="modal-content2" id="fullscreen-modal2">
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('modal2');
+
+// Get the image and insert it inside the modal
+var img = document.querySelectorAll('.crystal-fullsite');
+var modalImg = document.getElementById("fullscreen-modal2");
+
+$(".crystal-fullsite").click(function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+})
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close2")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>

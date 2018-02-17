@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get '/whereto' => 'pages#whereto'
   get '/friendlybean' => 'pages#friendlybean'
   get '/plenty' => 'pages#plenty'
+  get '/crystal-cove' => 'pages#crystal-cove'
 end

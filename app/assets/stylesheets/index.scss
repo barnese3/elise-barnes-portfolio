@@ -225,7 +225,8 @@ $font: 'Questrial', sans-serif;
 
 	.portfolio-item1,
 	.portfolio-item2,
-	.portfolio-item3{
+	.portfolio-item3,
+	.portfolio-item5{
 		background-size: cover;
 	    background-position: center;
 	    background-repeat: no-repeat;
@@ -256,7 +257,11 @@ $font: 'Questrial', sans-serif;
 	}
 
 	.portfolio-item4 {
-		background-image: image-url("plenty-fullsite");
+		background-image: image-url("plenty-fullsite.png");
+	}
+
+	.portfolio-item5 {
+		background-image: image-url("crystal-cove-full.png");
 	}
 }
 
@@ -414,6 +419,7 @@ $font: 'Questrial', sans-serif;
 	.home-portfolio .portfolio-item2, 
 	.home-portfolio .portfolio-item3,
 	.home-portfolio .portfolio-item4,
+	.home-portfolio .portfolio-item5,
 	.content .content-overlay {
 		width: 50%;
 	}
@@ -425,6 +431,7 @@ $font: 'Questrial', sans-serif;
 	.home-portfolio .portfolio-item2, 
 	.home-portfolio .portfolio-item3,
 	.home-portfolio .portfolio-item4,
+	.home-portfolio .portfolio-item5,
 	.content .content-overlay {
 		width: 65%;
 	}
@@ -436,6 +443,7 @@ $font: 'Questrial', sans-serif;
 	.home-portfolio .portfolio-item2, 
 	.home-portfolio .portfolio-item3,
 	.home-portfolio .portfolio-item4,
+	.home-portfolio .portfolio-item5,
 	.content .content-overlay {
 		width: 80%;
 	}
@@ -447,6 +455,7 @@ $font: 'Questrial', sans-serif;
 	.home-portfolio .portfolio-item2, 
 	.home-portfolio .portfolio-item3,
 	.home-portfolio .portfolio-item4,
+	.home-portfolio .portfolio-item5,
 	.content .content-overlay {
 		width: 97%;
 	}
@@ -458,6 +467,7 @@ $font: 'Questrial', sans-serif;
 	.home-portfolio .portfolio-item2, 
 	.home-portfolio .portfolio-item3,
 	.home-portfolio .portfolio-item4,
+	.home-portfolio .portfolio-item5,
 	.content {
 		height: 225px;
 	}
