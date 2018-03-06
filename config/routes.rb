@@ -8,5 +8,4 @@ Rails.application.routes.draw do
   get '/friendlybean' => 'pages#friendlybean'
   get '/plenty' => 'pages#plenty'
   get '/crystal-cove' => 'pages#crystal-cove'
-  get 'sitemap.xml', :to => 'sitemap#index', :defaults => {:format => 'xml'}
 end

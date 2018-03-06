@@ -52,3 +52,7 @@ gem 'skeleton-rails', :git => 'https://github.com/helios-technologies/skeleton-r
 gem "jquery-rails"
 
 gem 'font-awesome-rails'
+
+gem 'sitemap_generator'
+
+gem 'fog-aws'
