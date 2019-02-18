@@ -71,6 +71,7 @@ GEM
     erubi (1.7.0)
     excon (0.60.0)
     execjs (2.7.0)
+    ffi (1.9.18)
     ffi (1.9.18-x86-mingw32)
     fog-aws (2.0.1)
       fog-core (~> 1.38)
@@ -113,6 +114,8 @@ GEM
     minitest (5.11.1)
     multi_json (1.12.2)
     nio4r (2.2.0)
+    nokogiri (1.8.1)
+      mini_portile2 (~> 2.3.0)
     nokogiri (1.8.1-x86-mingw32)
       mini_portile2 (~> 2.3.0)
     public_suffix (3.0.1)
@@ -195,6 +198,7 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
