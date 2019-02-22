@@ -1,23 +1,26 @@
 $accent: #DDC8C4;
-$font: 'Questrial', sans-serif;
+$font: 'Raleway', sans-serif;
 
 @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
 
 .hero-image {
 	position: relative;
-	height: 70vh;
-	background-image: url("https://images.pexels.com/photos/543368/pexels-photo-543368.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+	height: 75vh;
+	background-image: url("me-1.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center 25%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin-bottom: 5%;
     padding: 1%;
 
     .hero-text {
-    	bottom: 0;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
     	position: absolute;
     	font-family: $font;
+    	z-index: 900;
 
 		a {
 			text-decoration: none;
@@ -29,12 +32,15 @@ $font: 'Questrial', sans-serif;
 
 			button {
 				border-radius: 0px;
-				border-width: 2px;
+				border-width: 1px;
 				color: #fff;
 	    		border-color: #fff;
 	    		background-color: transparent;
 	    		font-size: 13px;
 	    		line-height: 0;
+	    		font-family: $font;
+	    		margin-top: 2rem;
+	    		transition: all 0.5s ease;
 			}
     	}
 
@@ -56,13 +62,35 @@ $font: 'Questrial', sans-serif;
     }
 }
 
+.hero-image:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: #000;
+    opacity: 0.3;
+    zoom: 1;
+}
+
 .css-typing p {
   border-right: 2px solid #fff;
   white-space: nowrap;
   overflow: hidden;
   color: #fff;
   letter-spacing: 2px;
+  margin-bottom: 0;
 }
+
 .css-typing p:nth-child(1) {
   font: 80px $font;
   width: 9.5em;
@@ -74,7 +102,7 @@ $font: 'Questrial', sans-serif;
 
 .css-typing p:nth-child(2) {
   font-size: 30px;
-  width: 16.2em;
+  width: 25.2em;
   opacity: 0;
   -webkit-animation: type2 3s steps(40, end),
   	blink-caret .5s step-end infinite alternate;
@@ -172,12 +200,12 @@ $font: 'Questrial', sans-serif;
 	position: relative;
 	max-width: 100%;
 	height: 500px;
-	background-image: url("https://images.pexels.com/photos/144251/yosemite-national-park-landscape-california-144251.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+	background-image: url("fireplace-2-4.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin-bottom: 10%;
+    margin-bottom: 50px;
 
     .quote-text {
     	position: absolute;
@@ -194,13 +222,159 @@ $font: 'Questrial', sans-serif;
     }
 }
 
-// Horizontal Type Line Behind Portfolio Header
+#services {
+	max-width: 1000px;
+	margin: 0 auto 150px auto;
+	text-align: center;
+	padding: 30px;
 
+	.portfolio-header {
+		margin-bottom: 30px;
+	}
+
+	h3 {
+	  font-family: $font;
+	  font-weight: 600;
+	  color: #333;
+	  font-size: 1.825rem;
+	  margin: 1.3rem 0;
+	}
+
+	.section-lead {
+	  max-width: 600px;
+	  margin: 1rem auto 1.5rem;
+	}
+
+	.services-grid {
+	  display: -webkit-box;
+	  display: flex;
+	  -webkit-box-align: center;
+	  align-items: center;
+	}
+
+	p {
+	  margin: 1rem 0;
+	  line-height: 1.5;
+	}
+
+	a {
+	  text-decoration: none;
+	  margin: 1rem 0;
+	  font-weight: 600;
+	  text-transform: uppercase;
+	  font-size: 1.2rem;
+	  letter-spacing: 1px;
+	}
+} 
+
+.service a {
+  color: #5b7abb;
+  display: block;
+}
+
+.service h4 {
+  font-family: $font;
+  font-weight: 600;
+  color: #56ceba;
+  font-size: 2rem;
+  margin: 1rem 0 0.6rem;
+}
+
+.service {
+  background: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 0px;
+  text-align: center;
+  -webkit-box-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #e7e7e7;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.row-1,
+.row-2 {
+	width: 50%;
+}
+
+.service:hover {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+.service img {
+  margin: 1rem 0;
+  width: 50px;
+  height: 50px;
+}
+
+.service1 h4,
+.service1 .cta {
+  color: #42b7ca;
+}
+
+.service1:hover {
+  border: 2px solid #42b7ca;
+}
+
+.service2 h4,
+.service2 .cta {
+  color: #425fca;
+}
+
+.service2:hover {
+  border: 2px solid #425fca;
+}
+
+.service3 h4,
+.service3 .cta {
+  color: #9c42ca;
+}
+
+.service3:hover {
+  border: 2px solid #9c42ca;
+}
+
+.service .cta span {
+  font-size: 0.6rem;
+}
+
+.service > * {
+  flex: 1 1 100%;
+}
+
+.service .cta {
+  align-self: flex-end;
+}
+
+@media all and (max-width:900px) {
+  .services-grid {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+
+    .row-1,
+	.row-2 {
+		width: 100%;
+	}
+}
+
+// Horizontal Line Behind Portfolio Header
 .portfolio-header {
     position: relative;
     font-family: $font;
     text-align: center;
-    margin-bottom: 60px;
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
     
     &:before {
         border-top: 1.5px solid $accent;
@@ -218,6 +392,16 @@ $font: 'Questrial', sans-serif;
     }
 }
 
+@media (max-width: 500px) {
+	#recent-2 span {
+		font-size: 0.7em;
+	}
+
+	#services {
+		margin-bottom: 70px;
+	}
+}
+
 .home-portfolio {
 	width: 90%;
 	text-align: center;
@@ -227,41 +411,28 @@ $font: 'Questrial', sans-serif;
 	.portfolio-item2,
 	.portfolio-item3,
 	.portfolio-item5{
-		background-size: cover;
+		background-size: contain;
 	    background-position: center;
 	    background-repeat: no-repeat;
-		height: 300px;
-		width: 100%;
-		display: inline-block;
-	}
-
-	.portfolio-item4 {
-		background-size: 100%;
-	    background-position: top;
-	    background-repeat: no-repeat;
-		height: 300px;
+		height: 450px;
 		width: 100%;
 		display: inline-block;
 	}
 
 	.portfolio-item1 {
-		background-image: image-url("coffee-shop.png");
-	}
-
-	.portfolio-item2 {
-		background-image: image-url("whereto.png");
-	}
-
-	.portfolio-item3 {
-		background-image: url("https://images.pexels.com/photos/374703/pexels-photo-374703.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb");
-	}
-
-	.portfolio-item4 {
-		background-image: image-url("plenty-fullsite.png");
+		background-image: image-url("deli-mockup-2@2x.png");
 	}
 
 	.portfolio-item5 {
-		background-image: image-url("crystal-cove-full.png");
+		background-image: image-url("glc-mockup@2x.png");
+	}
+}
+
+#p-mobile {
+	display: none;
+
+	.portfolio-btn-contain {
+	    width: 100vw;
 	}
 }
 
@@ -271,78 +442,91 @@ $font: 'Questrial', sans-serif;
 
 .content {
 	position: relative;
-	height: 300px;
-	width: 45%;
+	height: 450px;
+	width: 49%;
 	display: inline-block;
 	margin: auto;
 	overflow: hidden;
 }
 
-.content .content-overlay {
-	background: $accent;
-	position: absolute;
-	height: 303px;
-	width: 100%;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	opacity: 0;
-	-webkit-transition: all 0.4s ease-in-out 0s;
-	-moz-transition: all 0.4s ease-in-out 0s;
-	transition: all 0.4s ease-in-out 0s;
-	}
-
-.content:hover .content-overlay{
-	opacity: 1;
+.content:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 225px;
+    width: 100%;
+    background: rgba(221,200,196,0.5);
+    z-index: -1;
+    margin: 10%;
 }
 
-.content-details {
-	position: absolute;
-	text-align: center;
-	padding-left: 1em;
-	padding-right: 1em;
-	width: 100%;
-	top: 50%;
-	left: 50%;
-	opacity: 0;
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	-webkit-transition: all 0.3s ease-in-out 0s;
-	-moz-transition: all 0.3s ease-in-out 0s;
-	transition: all 0.3s ease-in-out 0s;
-}
+// .content .content-overlay {
+// 	background: $accent;
+// 	position: absolute;
+// 	height: 303px;
+// 	width: 100%;
+// 	top: 50%;
+// 	left: 50%;
+// 	-webkit-transform: translate(-50%, -50%);
+// 	-moz-transform: translate(-50%, -50%);
+// 	transform: translate(-50%, -50%);
+// 	opacity: 0;
+// 	-webkit-transition: all 0.4s ease-in-out 0s;
+// 	-moz-transition: all 0.4s ease-in-out 0s;
+// 	transition: all 0.4s ease-in-out 0s;
+// }
 
-.content:hover .content-details{
-	top: 50%;
-	left: 50%;
-	opacity: 1;
-}
+// .content:hover .content-overlay{
+// 	opacity: 1;
+// }
 
-.content-details h3{
-	color: #fff;
-	font-weight: 500;
-	letter-spacing: 0.15em;
-	margin-bottom: 0.5em;
-	text-transform: uppercase;
-	font-family: $font;
-}
+// .content-details {
+// 	position: absolute;
+// 	text-align: center;
+// 	padding-left: 1em;
+// 	padding-right: 1em;
+// 	width: 100%;
+// 	top: 50%;
+// 	left: 50%;
+// 	opacity: 0;
+// 	-webkit-transform: translate(-50%, -50%);
+// 	-moz-transform: translate(-50%, -50%);
+// 	transform: translate(-50%, -50%);
+// 	-webkit-transition: all 0.3s ease-in-out 0s;
+// 	-moz-transition: all 0.3s ease-in-out 0s;
+// 	transition: all 0.3s ease-in-out 0s;
+// }
 
-.content-details p{
-	color: #fff;
-	font-size: 1.3em;
-	font-family: $font;
-}
+// .content:hover .content-details{
+// 	top: 50%;
+// 	left: 50%;
+// 	opacity: 1;
+// }
 
-.fadeIn-top{
-  top: 20%;
-}
+// .content-details h3{
+// 	color: #fff;
+// 	font-weight: 500;
+// 	letter-spacing: 0.15em;
+// 	margin-bottom: 0.5em;
+// 	text-transform: uppercase;
+// 	font-family: $font;
+// }
+
+// .content-details p{
+// 	color: #fff;
+// 	font-size: 1.3em;
+// 	font-family: $font;
+// }
+
+// .fadeIn-top{
+//   top: 20%;
+// }
 
 .portfolio-btn-contain {
-	width: 100%;
+	width: 49%;
 	text-align: center;
+	display: inline-block;
 
 	a {
 		width: 50%;
@@ -352,10 +536,16 @@ $font: 'Questrial', sans-serif;
 
 	button {
 		border-radius: 0px;
-		background-color: $accent;
-		color: #fff;
-		border-color: $accent;
-		margin-bottom: 12em;
+		background-color: #fff;
+		color: #000;
+		border-color: #000;
+		margin-bottom: 5em;
+		font-family: "Raleway", sans-serif;
+		font-size: 14px;
+		transition: all 0.5s ease;
+	    height: inherit;
+	    line-height: auto;
+	    letter-spacing: .15em;
 	}
 
 	button:hover,
@@ -366,9 +556,36 @@ $font: 'Questrial', sans-serif;
 		-webkit-transition-property: all;
         -moz-transition-property: all;
         transition-property: all;
-        -webkit-transition-duration: .4s;
-        -moz-transition-duration: .4s;
-        transition-duration: .4s;
+        -webkit-transition-duration: .5s;
+        -moz-transition-duration: .5s;
+        transition-duration: .5s;
+        -webkit-transition-timing-function: ease-in-out;
+        transition-timing-function: ease-in-out;
+	}
+
+	div {
+		background: url("https://image.flaticon.com/icons/svg/120/120881.svg");
+		width: 25px;
+		height: 50px;
+	    background-repeat: no-repeat;
+	    display: inline-block;
+	    vertical-align: middle;
+	    margin-bottom: -23.5px;
+	    margin-left: 5px;
+	    transition: all 0.5s ease;
+	    background-size: contain;
+	}
+
+	button:hover > div {
+		background: url("right-arrow.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		-webkit-transition-property: all;
+        -moz-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: .5s;
+        -moz-transition-duration: .5s;
+        transition-duration: .5s;
         -webkit-transition-timing-function: ease-in-out;
         transition-timing-function: ease-in-out;
 	}
@@ -415,6 +632,18 @@ $font: 'Questrial', sans-serif;
 		width: 100%;
 	}
 
+	#p-mobile {
+		display: block;
+	}
+
+	#p-desktop {
+		display: none;
+	}
+
+	.home-portfolio {
+		margin: 0;
+	}
+
 	.home-portfolio .portfolio-item1, 
 	.home-portfolio .portfolio-item2, 
 	.home-portfolio .portfolio-item3,
@@ -459,6 +688,10 @@ $font: 'Questrial', sans-serif;
 	.content .content-overlay {
 		width: 97%;
 	}
+
+	.portfolio-btn-contain {
+		margin-top: 15px;
+	}
 }
 
 @media (max-width: 575px) {
@@ -487,7 +720,8 @@ $font: 'Questrial', sans-serif;
 	}
 
 	.css-typing p:nth-child(2) {
-		width: 16em;
+		width: 27.5em;
+    	font-size: 18px;
 	}
 
 	.hero-image,
@@ -502,13 +736,30 @@ $font: 'Questrial', sans-serif;
 	}
 
 	.css-typing p:nth-child(2) {
-		font-size: 20px;
-		width: 17.5em;
+		font-size: 13.5px;
+		width: 29em;
 	}
 }
 
 @media (max-width: 410px) {
 	.css-typing p:nth-child(1) {
-		font-size: 35px;
+		font-size: 30px;
 	}
+
+	.css-typing p:nth-child(2) {
+    	font-size: 10px;
+    	width: 31.4em;
+    }
 }
+
+@media (max-width: 320px) {
+	.css-typing p:nth-child(1) {
+		font-size: 28px;
+	}
+
+	.css-typing p:nth-child(2) {
+    	font-size: 9.5px;
+    	width: 32em;
+    }
+}
+

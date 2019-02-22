@@ -1,21 +1,20 @@
-<% @title="Contact | Elise Barnes, Full Stack Web Developer" %>
+<% @title="Contact | Elise Barnes - Freelance Web Designer & Developer" %>
 
 <div class="contact-image">
 	<div class="contact-text">
 		<h1>Let's Chat</h1>
-		<p>Talk to me about your web development <br> needs or collaboration ideas.</p>
 	</div>
 </div>
 
 <div class="contact-desc">
-	<p>If you like what you see here, let's work together! <br><br> Contact me directly at <strong>barnese3@go.stockton.edu</strong> or fill out the form below and I will get back to you within 24 hours.</p>
+	<p>If you like what you see here, let's work together! <br><br> <span>Message me for a free website quote!</span> <br><br> Contact me directly at <strong><a href="mailto:websitesbyelise@gmail.com">websitesbyelise@gmail.com</a></strong> or fill out the form below and I will get back to you within 24 hours.</p>
 </div>
 
 <div class="social-icons">
 	<a href="https://www.facebook.com/thenaturalwaytowellness" target="_blank"><i class="fa fa-facebook"></i></a>
-	<a href="https://www.instagram.com/thenaturalwaytowellness/" target="_blank"><i class="fa fa-instagram"></i></a>
+	<a href="https://www.instagram.com/websitesbyelise/" target="_blank"><i class="fa fa-instagram"></i></a>
 	<a href="https://twitter.com/naturalwaywell" target="_blank"><i class="fa fa-twitter"></i></a>
-	<a href="mailto:barnese3@go.stockton.edu"><i class="fa fa-envelope-o"></i></a>
+	<a href="mailto:websitesbyelise@gmail.com"><i class="fa fa-envelope-o"></i></a>
 	<a href="https://www.linkedin.com/in/elise-barnes-180680b2/" target="_blank"><i class="fa fa-linkedin"></i></a>
 	<a href="https://github.com/barnese3" target="_blank"><i class="fa fa-github"></i></a>
 </div>
@@ -27,7 +26,7 @@
 	<br>
 	<textarea name="Message" cols="30" rows="6" placeholder="Message*" required></textarea>
 	<br>
-	<input type="hidden" name="_cc" value="embarnese3@hotmail.com">
+	<input type="hidden" name="_cc" value="barnese3@go.stockton.edu">
 	<input class="submit" type="submit" value="Send">
 </form>
 
@@ -46,7 +45,7 @@ $contactForm.submit(function(e) {
         },
         success: function(data) {
             $contactForm.find('.alert--loading').hide();
-            $contactForm.append('<div class="alert alert--success">Your mesage has been sent! I will reply within 24 hours. Thank you!</div>');
+            $contactForm.append('<div class="alert alert--success">Your message has been sent... I cannot wait to chat with you! I am currently traveling outside of the US. I will be back in my office on March 11th but I will try to get back to you as soon as possible. Thank you!</div>');
             $("#contact-form input").css("display", "none");
             $("#contact-form textarea").css("display", "none");
         },

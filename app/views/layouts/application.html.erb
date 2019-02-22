@@ -2,7 +2,7 @@
 <html>
   <head>
     <title><%= @title %></title>
-    <meta name="description" content="Elise Barnes is a Full Stack Web Developer and Web Designer who specializes in Front End Web Development. She lives in New Jersey and is available for full time Web Development work.">
+    <meta name="description" content="Elise Barnes is a Freelance Web Developer and Freelance Web Designer who specializes in building Squarespace websites. She lives in New Jersey and is available for freelance Web Development and Freelance Web Design projects.">
     <%= favicon_link_tag 'logo.png' %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= csrf_meta_tags %>
@@ -12,29 +12,72 @@
   </head>
 
   <body>
+
+
+
+
+<!-- <nav class="mobile-nav">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">Rentals</a></li>
+    <li><a href="calendar.html">Events</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li id="contact-end"><a href="contact.html">Contact</a></li>
+      <li><a href="tel:973-728-9100">T: (973) 728-9100</a></li>
+      <a href="calendar.html" id="button-order">
+        <button>
+          Buy Tickets Online
+        </button>
+      </a>
+  </ul>
+</nav> -->
+
+
+
+
+
+
+
+
+
   	<nav class="nav">
   		<ul>
-        <span>
-          <%= link_to "EB", root_path %>
-        </span>
+        <span><%= link_to "Websites By Elise", root_path %></span>
+        <div><%= image_tag "new-logo-4.png"%></div>
   			<li><%= link_to "Home", root_path %></li>
-  			<li><%= link_to "About Me", about_me_path %></li>
+  			<li><%= link_to "About", about_path %></li>
   			<li><%= link_to "Portfolio", portfolio_path %></li>
   			<li><%= link_to "Contact", contact_path %></li>
+        <li id="last-nav-item"><button><%= link_to "Services & Prices", services_and_prices_path %></button></li>
   		</ul>
   	</nav>
 
-<div id="menu-button">
+<!-- <div id="menu-button">
   <div class="hamburger">
     <div class="inner"></div>
   </div>
-</div>
+</div> -->
+
+
+
+
+
+
+  <div id="mobile-menu-button">
+    <div class="hamburger">
+      <div class="inner"></div>
+    </div>
+  </div>
+
+
+
 <nav class="mobile-nav">
   <ul>
     <li><%= link_to "Home", root_path %></li>
-    <li><%= link_to "About Me", about_me_path %></li>
+    <li><%= link_to "About", about_path %></li>
     <li><%= link_to "Portfolio", portfolio_path %></li>
     <li><%= link_to "Contact", contact_path %></li>
+    <li id="last-nav-item-mobile"><button><%= link_to "Services & Prices", services_and_prices_path %></button></li>
   </ul>
 </nav>
 
@@ -53,9 +96,10 @@
             <div class="footer-nav">
               <ul>
                 <li><%= link_to "Home", root_path %></li>
-                <li><%= link_to "About Me", about_me_path %></li>
+                <li><%= link_to "About", about_path %></li>
                 <li><%= link_to "Portfolio", portfolio_path %></li>
                 <li><%= link_to "Contact", contact_path %></li>
+                <li id="last-footer-item"><%= link_to "Services & Prices", services_and_prices_path %></li>
               </ul>
             </div>
           </div>
@@ -63,7 +107,7 @@
           <div class="one-third column">
             <div class="footer-social">
               <a href="https://www.facebook.com/thenaturalwaytowellness" target="_blank"><i class="fa fa-facebook"></i></a>
-              <a href="https://www.instagram.com/thenaturalwaytowellness/" target="_blank"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.instagram.com/websitesbyelise/" target="_blank"><i class="fa fa-instagram"></i></a>
               <a href="https://twitter.com/naturalwaywell" target="_blank"><i class="fa fa-twitter"></i></a>
               <a href="mailto:barnese3@go.stockton.edu"><i class="fa fa-envelope-o"></i></a>
               <a href="https://www.linkedin.com/in/elise-barnes-180680b2/" target="_blank"><i class="fa fa-linkedin"></i></a>
@@ -78,14 +122,76 @@
 </html>
 
 <script>
-$('#menu-button').on('click', function() {
-  $(document.body).toggleClass('menu-open');
-  if ($(".mobile-nav").height() == 0) {
-           $(".mobile-nav").animate(
-               {height: "100vh"});
-           }
-        else if ($(".mobile-nav").height() === "100vh") {
-           $(".mobile-nav").animate({height: "0%"});
-           }
+// $('#menu-button').on('click', function() {
+//   $(document.body).toggleClass('menu-open');
+//   if ($(".mobile-nav").height() == 0) {
+//            $(".mobile-nav").animate(
+//                {height: "100vh"});
+//            }
+//         else if ($(".mobile-nav").height() === "100vh") {
+//            $(".mobile-nav").animate({height: "0%"});
+//            }
+// });
+
+// Responsive mobile navigation menu
+// open menu when you click on the hamburger lines
+$(document).ready(function() {
+  $('#mobile-menu-button').on('click', function() {
+    $(document.body).toggleClass('menu-open');
+  });
+});
+
+// close menu when you click on a menu item link (a)
+$(document).ready(function() {
+  $('.mobile-nav ul li a').on('click', function() {
+      if ($(document.body).hasClass('menu-open')) {
+        $(document.body).removeClass('menu-open');
+      }
+  });
+});
+
+$(document).ready(function() {
+  $('.mobile-nav ul #button-order').on('click', function() {
+      if ($(document.body).hasClass('menu-open')) {
+        $(document.body).removeClass('menu-open');
+      }
+  });
+});
+
+// close menu when you click somewhere else in the document
+$(document).click(function(){
+  if ($(document.body).hasClass('menu-open')) {
+    $(document.body).removeClass('menu-open');
+  }
+});
+
+$(".mobile-nav").click(function(e){
+  e.stopPropagation();
+});
+
+$(".mobile-nav ul li").click(function(e){
+  e.stopPropagation();
+});
+
+$(".mobile-nav ul").click(function(e){
+  e.stopPropagation();
+});
+
+$('#mobile-menu-button').click(function(e){
+  e.stopPropagation();
 });
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

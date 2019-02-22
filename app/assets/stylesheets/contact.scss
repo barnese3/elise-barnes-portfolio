@@ -1,5 +1,5 @@
 $accent: #DDC8C4;
-$font: 'Questrial', sans-serif;
+$font: 'Raleway', sans-serif;
 
 .contact-image {
 	position: relative;
@@ -38,6 +38,16 @@ $font: 'Questrial', sans-serif;
         width: 50%;
         margin: 0 auto;
         font-family: $font;
+
+        span {
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        a {
+            color: $accent;
+        }
     }
 }
 
@@ -97,6 +107,9 @@ $font: 'Questrial', sans-serif;
         margin: 0 auto;
         padding: 0;
         -webkit-appearance: none;
+        transition: all 0.5s ease;
+        font-family: $font;
+        font-size: 12px;
     }
 
     .submit:hover {
@@ -108,11 +121,11 @@ $font: 'Questrial', sans-serif;
 
 .alert {
     margin-top: 3%;
-    font-size: 20px;
+    font-size: 25px;
     font-family: $font;
     text-align: center;
-    font-style: italic;
-    border-bottom: 1.5px solid $accent;
+    // font-style: italic;
+    // border-bottom: 1.5px solid $accent;
 }
 
 @media (max-width: 950px) {

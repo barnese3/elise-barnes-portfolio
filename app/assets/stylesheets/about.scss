@@ -1,10 +1,9 @@
 $accent: #DDC8C4;
-$font: 'Questrial', sans-serif;
+$font: 'Raleway', sans-serif;
 
 .about-image {
 	position: relative;
-	height: 60vh;
-    background-image: url("https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=1055&q=80");
+	height: 80vh;
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -12,45 +11,136 @@ $font: 'Questrial', sans-serif;
     margin-bottom: 5%;
     padding: 1%;
 
-    .about-text {
-    	top: 0;
-        right: 1%;
-        text-align: right;
-    	position: absolute;
-    	font-family: $font;
-        color: #000;
+    #image-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: url("me-6-2.jpg");
+        background-size: cover;
+        background-position: center;
 
-        h1 {
-            font-size: 50px;
-        }
+        border-right: 5px solid white;
+    }
 
-        p {
-            font-size: 25px;
-        }
+    #image-2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 40%;
+        background-image: url("me-1.jpg");
+        background-size: cover;
+        background-position: center;
+
+        border-left: 5px solid white;
+        border-bottom: 5px solid white;
+    }
+
+    #image-3 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        height: 60%;
+        background-image: url("me-5-5.jpg");
+        background-size: cover;
+        background-position: center 50%;
+
+        border-left: 5px solid white;
+        border-top: 5px solid white;
     }
 }
 
 .about-main {
-    margin-bottom: 4%;
+    margin-bottom: 100px;
 
-    p, h5 {
+    p, h2 {
         width: 50%;
         margin: 0 auto;
         font-family: $font;
     }
 
     p {
-        text-align: center;
+        text-align: left;
+        font-weight: bold;
+
+        strong {
+            color: $accent;
+        }
     }
 
-    h5 {
-        text-align: center;
-        margin-top: 70px;
+    h2 {
+        margin-bottom: 20px;
     }
 }
 
-.about-skills {
+#testimonials-h4 {
+    text-align: center;
+    margin-bottom: 0;
+}
 
+#strengths-h5 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+.testimonials {
+    position: relative;
+    height: 400px;
+    background: url("https://images.pexels.com/photos/758733/pexels-photo-758733.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+
+    p {
+        margin-bottom: 0;
+        font-size: 1.2em;
+        font-style: italic;
+        color: #fff;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 101;
+    }
+
+    p:before {
+        font-family: 'Playfair Display',serif;
+        content: "\201C";
+        font-size: 100px;
+        padding-bottom: 20px;
+        color: #fff;
+        display: block;
+        line-height: 0;
+        text-align: center;
+    }
+}
+
+.testimonials:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: #000;
+    opacity: 0.2;
+}
+
+.about-skills {
     .about-skills-item {
         text-align: center;
 
@@ -108,6 +198,9 @@ $font: 'Questrial', sans-serif;
         background-color: $accent;
         color: #fff;
         border-color: $accent;
+        font-family: $font;
+        font-size: 12px;
+        transition: all 0.5s ease;
     }
 
     button:hover {
@@ -117,22 +210,33 @@ $font: 'Questrial', sans-serif;
         -webkit-transition-property: all;
         -moz-transition-property: all;
         transition-property: all;
-        -webkit-transition-duration: .4s;
-        -moz-transition-duration: .4s;
-        transition-duration: .4s;
+        -webkit-transition-duration: .5s;
+        -moz-transition-duration: .5s;
+        transition-duration: .5s;
         -webkit-transition-timing-function: ease-in-out;
         transition-timing-function: ease-in-out;
     }
 }
 
+
+@media (max-width: 600px) {
+    .testimonials p {
+        width: 90%;
+    }
+}
+
 @media (max-width: 850px) {
-    .about-main p, .about-main h5 {
-        width: 95%;
+    .about-main p, .about-main h2 {
+        width: 90%;
     }
 }
 
 @media (max-width: 775px) {
     .about-image {
         background-attachment: scroll;
+    }
+
+    .about-image #image-3 {
+        background-position: left;
     }
 }
