@@ -244,3 +244,9 @@ $font: 'Raleway', sans-serif;
         background-attachment: scroll;
     }
 }
+
+@media (max-width: 450px) {
+    .about-image {
+        height: 70vh;
+    }
+}
