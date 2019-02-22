@@ -19,7 +19,7 @@
 	<a href="https://github.com/barnese3" target="_blank"><i class="fa fa-github"></i></a>
 </div>
 
-<form id="contact-form" action="//formspree.io/barnese3@go.stockton.edu" method="post">
+<form id="contact-form" action="https://formspree.io/websitesbyelise@gmail.com" method="post">
 	<input type="text" name="Name" placeholder="Name*" required>
 	<br>
 	<input type="email" name="Email" placeholder="Email*" required>
@@ -31,11 +31,11 @@
 </form>
 
 
-<form action="https://formspree.io/websitesbyelise@gmail.com" method="POST">
+<!-- <form action="https://formspree.io/websitesbyelise@gmail.com" method="POST">
   <input type="text" name="name">
   <input type="email" name="_replyto">
   <input type="submit" value="Send">
-</form>
+</form> -->
 
 
 <script>
@@ -44,7 +44,7 @@ var $contactForm = $('#contact-form');
 $contactForm.submit(function(e) {
     e.preventDefault();
     $.ajax({
-        url: '//formspree.io/barnese3@go.stockton.edu',
+        url: 'https://formspree.io/websitesbyelise@gmail.com',
         method: 'POST',
         data: $(this).serialize(),
         dataType: 'json',
