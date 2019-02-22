@@ -30,7 +30,7 @@ $font: 'Raleway', sans-serif;
         right: 0;
         width: 50%;
         height: 40%;
-        background-image: url("me-1.jpg");
+        background-image: image-url("me-1.jpg");
         background-size: cover;
         background-position: center;
 
@@ -44,7 +44,7 @@ $font: 'Raleway', sans-serif;
         right: 0;
         width: 50%;
         height: 60%;
-        background-image: url("me-5-5.jpg");
+        background-image: image-url("me-5-5.jpg");
         background-size: cover;
         background-position: center 50%;
 
@@ -238,5 +238,9 @@ $font: 'Raleway', sans-serif;
 
     .about-image #image-3 {
         background-position: left;
+    }
+
+    .testimonials {
+        background-attachment: scroll;
     }
 }
