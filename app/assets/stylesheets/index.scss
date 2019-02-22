@@ -620,10 +620,12 @@ $font: 'Raleway', sans-serif;
 }
 
 @media (max-width: 850px) {
-	.home-desc p {
-	    width: 95%;
-	    font-size: 20px;
-	    padding: 50px 1px;
+	.home-desc {
+		padding: 50px 5px;
+
+		p {
+		    width: 95%;
+		}
 	}
 }
 
