@@ -103,7 +103,7 @@ $font: 'Raleway', sans-serif;
 
 .css-typing p:nth-child(2) {
   font-size: 30px;
-  width: 25.2em;
+  width: 19em;
   opacity: 0;
   -webkit-animation: type2 3s steps(40, end),
   	blink-caret .5s step-end infinite alternate;
@@ -724,8 +724,8 @@ $font: 'Raleway', sans-serif;
 	}
 
 	.css-typing p:nth-child(2) {
-		width: 27.5em;
-    	font-size: 18px;
+		width: 20em;
+    	font-size: 20px;
 	}
 
 	.hero-image,
@@ -738,11 +738,6 @@ $font: 'Raleway', sans-serif;
 	.css-typing p:nth-child(1) {
 		font-size: 40px;
 	}
-
-	.css-typing p:nth-child(2) {
-		font-size: 13.5px;
-		width: 29em;
-	}
 }
 
 @media (max-width: 410px) {
@@ -751,8 +746,15 @@ $font: 'Raleway', sans-serif;
 	}
 
 	.css-typing p:nth-child(2) {
-    	font-size: 10px;
-    	width: 31.4em;
+    	font-size: 16px;
+    	width: 21em;
+    }
+}
+
+@media (max-width: 355px) {
+	.css-typing p:nth-child(2) {
+    	font-size: 14px;
+    	width: 21.5em;
     }
 }
 
@@ -760,10 +762,5 @@ $font: 'Raleway', sans-serif;
 	.css-typing p:nth-child(1) {
 		font-size: 28px;
 	}
-
-	.css-typing p:nth-child(2) {
-    	font-size: 9.5px;
-    	width: 32em;
-    }
 }
 
