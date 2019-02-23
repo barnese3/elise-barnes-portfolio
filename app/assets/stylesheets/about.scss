@@ -107,6 +107,7 @@ $font: 'Raleway', sans-serif;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 101;
+        font-weight: bolder;
     }
 
     p:before {
@@ -199,8 +200,9 @@ $font: 'Raleway', sans-serif;
         color: #fff;
         border-color: $accent;
         font-family: $font;
-        font-size: 12px;
+        font-size: 14px;
         transition: all 0.5s ease;
+        font-weight: bolder;
     }
 
     button:hover {

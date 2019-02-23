@@ -28,7 +28,7 @@ $font: 'Raleway', sans-serif;
 			text-transform: capitalize;
 			font-style: italic;
 			font-family: $font;
-			font-weight: 900;
+			font-weight: bolder;
 
 			button {
 				border-radius: 0px;
@@ -89,6 +89,7 @@ $font: 'Raleway', sans-serif;
   color: #fff;
   letter-spacing: 2px;
   margin-bottom: 0;
+  font-weight: bolder;
 }
 
 .css-typing p:nth-child(1) {
@@ -218,6 +219,7 @@ $font: 'Raleway', sans-serif;
     		text-align: center;
     		font-family: $font;
     		font-size: 18px;
+    		font-weight: bolder;
     	}
     }
 }
