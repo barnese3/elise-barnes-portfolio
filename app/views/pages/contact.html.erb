@@ -2,7 +2,7 @@
 
 <div class="contact-image">
 	<div class="contact-text">
-		<h1>Let's Chat</h1>
+<!-- 		<h1>Let's Chat</h1> -->
 	</div>
 </div>
 
@@ -45,7 +45,7 @@ $contactForm.submit(function(e) {
         },
         success: function(data) {
             $contactForm.find('.alert--loading').hide();
-            $contactForm.append('<div class="alert alert--success">Your message has been sent... I cannot wait to chat with you! I am currently traveling outside of the US. I will be back in my office on March 11th but I will try to get back to you as soon as possible. Thank you!</div>');
+            $contactForm.append('<div class="alert alert--success">Your message has been sent... I cannot wait to chat with you! I will get back to you within 24 hours. Thank you!</div>');
             $("#contact-form input").css("display", "none");
             $("#contact-form textarea").css("display", "none");
         },

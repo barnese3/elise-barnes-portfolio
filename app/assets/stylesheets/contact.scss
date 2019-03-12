@@ -4,7 +4,7 @@ $font: 'Raleway', sans-serif;
 .contact-image {
 	position: relative;
 	height: 60vh;
-	background-image: url("https://images.pexels.com/photos/248771/pexels-photo-248771.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+	background-image: image-url("contact-header-image.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -120,7 +120,7 @@ $font: 'Raleway', sans-serif;
 }
 
 .alert {
-    margin-top: 3%;
+    margin-bottom: 75px;
     font-size: 25px;
     font-family: $font;
     text-align: center;
@@ -130,6 +130,14 @@ $font: 'Raleway', sans-serif;
 
 form {
     padding-bottom: 500px;
+}
+
+::placeholder {
+    color: #000;
+}
+
+::value {
+    color: #000;
 }
 
 @media (max-width: 950px) {
