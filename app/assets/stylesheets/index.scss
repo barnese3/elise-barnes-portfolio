@@ -83,7 +83,7 @@ $font: 'Raleway', sans-serif;
 }
 
 .css-typing p {
-  border-right: 2px solid #fff;
+  // border-right: 2px solid #fff;
   white-space: nowrap;
   overflow: hidden;
   color: #fff;
@@ -94,7 +94,7 @@ $font: 'Raleway', sans-serif;
 
 .css-typing p:nth-child(1) {
   font: 80px $font;
-  width: 9.5em;
+  width: 100%;
   -webkit-animation: type 3s steps(40, end);
   animation: type 3s steps(40, end);
   -webkit-animation-fill-mode: forwards;
@@ -103,25 +103,28 @@ $font: 'Raleway', sans-serif;
 
 .css-typing p:nth-child(2) {
   font-size: 30px;
-  width: 19em;
+  width: 100%;
   opacity: 0;
-  -webkit-animation: type2 3s steps(40, end),
-  	blink-caret .5s step-end infinite alternate;
-  animation: type2 3s steps(40, end),
-  	blink-caret .5s step-end infinite alternate;
+  -webkit-animation: type2 3s steps(40, end);
+  animation: type2 3s steps(40, end);
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
+.css-typing p:nth-child(2) span {
+    animation: blink-caret 0.5s step-end infinite alternate;
+    border-right: 2px solid #fff;
+}
+
 @keyframes type {
   0% {
     width: 0;
   }
-  99.9% {
-    border-right: 2px solid #fff;
-  }
+  // 99.9% {
+  //   border-right: 2px solid #fff;
+  // }
   100% {
     border: none;
   }
@@ -131,9 +134,9 @@ $font: 'Raleway', sans-serif;
   0% {
     width: 0;
   }
-  99.9% {
-    border-right: 2px solid #fff;
-  }
+  // 99.9% {
+  //   border-right: 2px solid #fff;
+  // }
   100% {
     border: none;
   }
@@ -146,9 +149,9 @@ $font: 'Raleway', sans-serif;
   1% {
     opacity: 1;
   }
-  99.9% {
-    border-right: 2px solid #fff;
-  }
+  // 99.9% {
+  //   border-right: 2px solid #fff;
+  // }
   100% {
     opacity: 1;
   }
@@ -161,9 +164,9 @@ $font: 'Raleway', sans-serif;
   1% {
     opacity: 1;
   }
-  99.9% {
-    border-right: 2px solid #fff;
-  }
+  // 99.9% {
+  //   border-right: 2px solid #fff;
+  // }
   100% {
     opacity: 1;
   }
@@ -434,7 +437,7 @@ $font: 'Raleway', sans-serif;
 	display: none;
 
 	.portfolio-btn-contain {
-	    width: 100vw;
+	    width: 100%;
 	}
 }
 
@@ -454,13 +457,13 @@ $font: 'Raleway', sans-serif;
 .content:after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 225px;
-    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 75%;
+    width: 95%;
     background: rgba(221,200,196,0.5);
     z-index: -1;
-    margin: 10%;
 }
 
 // .content .content-overlay {
@@ -719,12 +722,12 @@ $font: 'Raleway', sans-serif;
 
 @media (max-width: 775px) {
 	.css-typing p:nth-child(1) {
-		width: 10em;
+		// width: 10em;
 		font-size: 50px;
 	}
 
 	.css-typing p:nth-child(2) {
-		width: 20.5em;
+		// width: 20.5em;
     	font-size: 18px;
 	}
 
@@ -747,14 +750,14 @@ $font: 'Raleway', sans-serif;
 
 	.css-typing p:nth-child(2) {
     	font-size: 15px;
-    	width: 21em;
+    	// width: 21em;
     }
 }
 
 @media (max-width: 355px) {
 	.css-typing p:nth-child(2) {
     	font-size: 14px;
-    	width: 21.5em;
+    	// width: 21.5em;
     }
 }
 
