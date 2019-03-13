@@ -199,10 +199,10 @@ $font: 'Raleway', sans-serif;
         background-color: $accent;
         color: #fff;
         border-color: $accent;
-        font-family: $font;
         font-size: 16px;
         transition: all 0.5s ease;
-        font-weight: bolder;
+        font-family: sans-serif;
+        font-weight: 100;
     }
 
     button:hover {
@@ -218,8 +218,15 @@ $font: 'Raleway', sans-serif;
         -webkit-transition-timing-function: ease-in-out;
         transition-timing-function: ease-in-out;
     }
+
+    i {
+        margin-left: 10px;
+    }
 }
 
+#recent-work-button {
+    margin-bottom: 0;
+}
 
 @media (max-width: 600px) {
     .testimonials p {
@@ -250,5 +257,11 @@ $font: 'Raleway', sans-serif;
 @media (max-width: 450px) {
     .about-image {
         height: 70vh;
+    }
+}
+
+@media (max-width: 340px) {
+    .about-button button {
+        font-size: 13px;
     }
 }

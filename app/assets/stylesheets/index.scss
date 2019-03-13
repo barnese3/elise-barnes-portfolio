@@ -36,11 +36,12 @@ $font: 'Raleway', sans-serif;
 				color: #fff;
 	    		border-color: #fff;
 	    		background-color: transparent;
-	    		font-size: 13px;
+	    		font-size: 14px;
 	    		line-height: 0;
-	    		font-family: $font;
 	    		margin-top: 2rem;
 	    		transition: all 0.5s ease;
+	    		font-family: sans-serif;
+  				font-weight: 100;
 			}
     	}
 
@@ -419,7 +420,7 @@ $font: 'Raleway', sans-serif;
 		background-size: contain;
 	    background-position: center;
 	    background-repeat: no-repeat;
-		height: 450px;
+		height: 350px;
 		width: 100%;
 		display: inline-block;
 	}
@@ -447,7 +448,7 @@ $font: 'Raleway', sans-serif;
 
 .content {
 	position: relative;
-	height: 450px;
+	height: 375px;
 	width: 49%;
 	display: inline-block;
 	margin: auto;
@@ -457,9 +458,9 @@ $font: 'Raleway', sans-serif;
 .content:after {
     content: "";
     position: absolute;
-    top: 50%;
+    bottom: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
     height: 75%;
     width: 95%;
     background: rgba(221,200,196,0.5);
@@ -543,8 +544,10 @@ $font: 'Raleway', sans-serif;
 		border-radius: 0px;
 		background-color: #fff;
 		color: #000;
-		border-color: #000;
-		margin-bottom: 5em;
+		border: none;
+		border-bottom: 1px solid #000;
+		margin-bottom: 3em;
+		margin-top: 1.5em;
 		font-family: "Raleway", sans-serif;
 		font-size: 14px;
 		transition: all 0.5s ease;
@@ -594,6 +597,10 @@ $font: 'Raleway', sans-serif;
         -webkit-transition-timing-function: ease-in-out;
         transition-timing-function: ease-in-out;
 	}
+}
+
+#greenwood {
+	margin-bottom: 5em;
 }
 
 .top {
