@@ -1,28 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
 $accent: #DDC8C4;
 $font: 'Raleway', sans-serif;
 
-.where-to-header {
-	font-family: $font;
-	text-align: center;
-	padding: 100px 0 50px 0;
+.services-header {
+	position: relative;
+	height: 70vh;
+	background-image: image-url("services.jpg");
+    background-size: 100%;
+    background-position: center 75%;
+    background-repeat: no-repeat;
 }
 
-#services-p {
+.services-text {
+	width: 100%;
 	text-align: center;
-	padding: 0 20px 200px 0;
+	padding: 150px;
 
-	a {
-		color: $accent;
+	p {
+		font-family: $font;
+		font-size: 18px;
 	}
 }
 
-// .where-to-lang {
-// 	border-left: 4px solid $accent;
-// 	width: 100px;
-//     margin: 0 auto 50px;
+.services-main {
+	margin-bottom: 100px;
 
-// 	p {
-// 		margin: 0 0 0 10px;
-// 		font-family: $font;
-// 	}
-// }
+	.container {
+		max-width: 100%;
+		width: 100%;
+		background-color: #E3DCDC;
+		padding: 0px;
+	}
+
+	.five {
+		height: 600px;
+		background-image: url("https://images.pexels.com/photos/604598/pexels-photo-604598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); 
+		background-size: cover;
+	}
+
+	.seven {
+		text-align: center;
+
+		#week-price {
+			font-family: 'Roboto', sans-serif;
+			color: #555555;
+			margin: 70px 0 20px 0;
+		}
+
+		h2 {
+			color: #562247;
+		}
+
+		h5 {
+			font-family: 'Roboto', sans-serif;
+			color: #555555;
+		}
+
+		ul {
+			list-style-type: none;
+			font-family: 'Roboto', sans-serif;
+			color: #555555;
+			margin-bottom: 70px;
+		}
+	}
+}
+
+.services-addons {
+
+	#addon-h5 {
+		text-align: center;
+		margin-bottom: 50px;
+		font-weight: 900;
+	}
+
+	.container {
+		text-align: center;
+
+		.row {
+			margin-bottom: 50px;
+		}
+
+		h5 {
+		    margin-bottom: 1em;
+		    font-style: italic;
+		}
+
+		.addon-headers {
+		    font-family: 'Roboto', sans-serif;
+		    color: #555555;
+		    margin-bottom: 0;
+		}
+	}
+}
+
+.services-client-portal {
+	margin-bottom: 150px;
+
+	.container {
+		width: 90%;
+		max-width: 90%;
+	}
+
+	.five {
+		text-align: center;
+
+		#client-p {
+			font-family: 'Roboto', sans-serif;
+		}
+
+		ul {
+			list-style-type: none;
+		}
+	}
+
+	.seven {
+		height: 500px;
+		background-image: image-url("client-portal.png"); 
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+}
+
+.contact-form-header {
+	text-align: center;
+}
+
+.services-contact-form {
+	form {
+		font-family: $font;
+	    width: 50%;
+	    margin: 0 auto;
+	    padding-bottom: 150px;
+
+		input,
+	    textarea {
+	        width: 100%;
+	        font-family: 'Roboto', sans-serif;
+	    }
+
+		textarea {
+	        resize: none;
+	        height: 200px;
+	    }
+
+	    input:focus,
+	    textarea:focus {
+	        border: 1.5px solid $accent;
+	    }
+
+	    label {
+	    	margin: 0;
+	    }
+
+		.fl-name {
+			width: 49.725%;
+		}
+
+		.description {
+			padding: .5em 0 .5em;
+		    font-size: 12px;
+		    opacity: .7;
+		    display: block;
+		    white-space: pre-wrap;
+		}
+
+		.submit {
+	        border-radius: 0px;
+	        color: #fff;
+	        background-color: $accent;
+	        border-color: $accent;
+	        width: 20%;
+	        margin: 0 auto;
+	        padding: 0;
+	        -webkit-appearance: none;
+	        transition: all 0.5s ease;
+	        font-family: sans-serif;
+	        font-weight: 100;
+	        font-size: 14px;
+	    }
+
+	    .submit:hover {
+	        background-color: transparent;
+	        color: $accent;
+	        border-color: $accent;
+	    }
+	}
+}
+
+@media (max-width: 1260px) {
+	.services-header {
+		height: 50vh;
+	}
+}
+
+@media (max-width: 950px) {
+    #services-contact-form .submit {
+        width: 40%;
+    }
+}
+
+@media (max-width: 850px) {
+    #services-contact-form {
+        width: 85%;
+    }
+}
+
+@media (max-width: 800px) {
+	.services-header {
+		height: 40vh;
+	}
+
+	.services-text {
+		padding: 50px 150px;
+	}
+}
+
+@media (max-width: 550px) {
+	.services-client-portal {
+		margin-bottom: 5%;
+
+		.seven {
+			height: 250px;
+		}
+	}
+}
+
+
+
