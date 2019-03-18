@@ -94,7 +94,8 @@ $font: 'Raleway', sans-serif;
     }
 
     input:focus,
-    textarea:focus {
+    textarea:focus,
+    select:focus {
         border: 1.5px solid $accent;
     }
 

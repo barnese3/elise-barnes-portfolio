@@ -93,12 +93,16 @@ button {
     font-family: 'Raleway', sans-serif;
   }
 
-  #last-nav-item button a {
+  #last-nav-item a button {
     font-size: 11px;
     transition: all 0.5s ease;
   }
 
-  #last-nav-item button a::after {
+  #last-nav-item a button:hover {
+    color: $accent;
+  } 
+
+  #last-nav-item a::after {
     transition: none;
     width: 0%;
   }

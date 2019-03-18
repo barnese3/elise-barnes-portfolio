@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/portfolio' => 'pages#portfolio'
   get '/contact' => 'pages#contact'
   get '/services-and-prices' => 'pages#services-and-prices'
+  get '/thanks' => 'pages#thanks'
   # get '/friendlybean' => 'pages#friendlybean'
   # get '/plenty' => 'pages#plenty'
   # get '/crystal-cove' => 'pages#crystal-cove'
