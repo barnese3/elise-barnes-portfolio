@@ -16,11 +16,38 @@ $font: 'Raleway', sans-serif;
 .services-text {
 	width: 100%;
 	text-align: center;
-	padding: 150px;
+	padding: 150px 12%;
 
 	p {
 		font-family: $font;
 		font-size: 18px;
+	}
+
+	#more-info {
+		cursor: pointer;
+	}
+
+	h5 {
+		margin: 80px 0 0 0;
+	}
+
+	h6 {
+		text-transform: uppercase;
+		margin-bottom: 0;
+	}
+
+	ul {
+		display: none;
+		margin-top: 2rem;
+		font-weight: 900;
+	}
+
+	#hide {
+		display: none;
+	}
+
+	a {
+		color: $accent;
 	}
 }
 
@@ -95,6 +122,29 @@ $font: 'Raleway', sans-serif;
 	}
 }
 
+.process {
+	background-color: $accent;
+	padding: 30px 0;
+    margin: 0 10% 100px 10%;
+    background-color: rgba(255,255,255, 0.8);
+    background-blend-mode: lighten;
+    background-image: url("https://images.pexels.com/photos/876467/pexels-photo-876467.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    font-weight: 900;
+
+    img {
+    	width: 30px;
+    }
+
+    .container .addon-headers {
+    	text-transform: uppercase;
+    	color: #000;
+    }
+
+    .container .two {
+    	margin-top: 60px;
+    }
+}
+
 .services-client-portal {
 	margin-bottom: 150px;
 
@@ -156,7 +206,7 @@ $font: 'Raleway', sans-serif;
 	    	margin: 0;
 	    }
 
-		.fl-name {
+		.name {
 			width: 49.725%;
 		}
 
@@ -168,7 +218,7 @@ $font: 'Raleway', sans-serif;
 		    white-space: pre-wrap;
 		}
 
-		.submit {
+		.button {
 	        border-radius: 0px;
 	        color: #fff;
 	        background-color: $accent;
@@ -183,7 +233,7 @@ $font: 'Raleway', sans-serif;
 	        font-size: 14px;
 	    }
 
-	    .submit:hover {
+	    .button:hover {
 	        background-color: transparent;
 	        color: $accent;
 	        border-color: $accent;
@@ -215,7 +265,7 @@ $font: 'Raleway', sans-serif;
 	}
 
 	.services-text {
-		padding: 50px 150px;
+		padding: 50px 12%;
 	}
 }
 
@@ -225,6 +275,16 @@ $font: 'Raleway', sans-serif;
 
 		.seven {
 			height: 250px;
+		}
+	}
+
+	.process .container {
+		.row {
+			margin-bottom: 0;
+		}
+
+		.two {
+			display: none;
 		}
 	}
 }
