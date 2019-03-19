@@ -290,6 +290,7 @@ $font: 'Raleway', sans-serif;
   background: #fff;
   margin: 20px;
   padding: 20px;
+  height: 300px;
   border-radius: 0px;
   text-align: center;
   -webkit-box-flex: 1;
@@ -724,6 +725,16 @@ $font: 'Raleway', sans-serif;
 	.content .content-overlay,
 	.content-details {
 		opacity: 0;
+	}
+}
+
+@media (max-width: 900px) {
+	.service {
+	  height: auto;
+	}
+
+	#blog-setup {
+		margin-bottom: 0;
 	}
 }
 
