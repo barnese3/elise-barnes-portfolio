@@ -160,6 +160,10 @@ $font: 'Raleway', sans-serif;
     }
 }
 
+.about-skills.container {
+    width: 95%;
+}
+
 .arrow {
     width: 100%;
     text-align: center;
@@ -251,6 +255,12 @@ $font: 'Raleway', sans-serif;
 
     .testimonials {
         background-attachment: scroll;
+    }
+}
+
+@media (max-width: 549px) {
+    .about-skills.container {
+        padding: 0 50px;
     }
 }
 
