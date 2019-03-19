@@ -78,6 +78,8 @@ $font: 'Raleway', sans-serif;
 
 		h2 {
 			color: #562247;
+			padding-left: 5%;
+   			padding-right: 5%;
 		}
 
 		h5 {
@@ -176,6 +178,11 @@ $font: 'Raleway', sans-serif;
 
 .contact-form-header {
 	text-align: center;
+
+	h6 {
+		padding-right: 5%;
+		padding-left: 5%;
+	}
 }
 
 .services-contact-form {
@@ -241,6 +248,12 @@ $font: 'Raleway', sans-serif;
 	}
 }
 
+@media (max-width: 1280px) {
+	.services-main .five {
+		height: 620px;
+	}
+}
+
 @media (max-width: 1260px) {
 	.services-header {
 		height: 50vh;
@@ -248,7 +261,7 @@ $font: 'Raleway', sans-serif;
 }
 
 @media (max-width: 950px) {
-    #services-contact-form .submit {
+    #services-contact-form .button {
         width: 40%;
     }
 }
@@ -269,6 +282,12 @@ $font: 'Raleway', sans-serif;
 	}
 }
 
+@media (max-width: 735px) {
+	.services-main .five {
+		height: 700px;
+	}
+}
+
 @media (max-width: 550px) {
 	.services-client-portal {
 		margin-bottom: 5%;
@@ -276,6 +295,16 @@ $font: 'Raleway', sans-serif;
 		.seven {
 			height: 250px;
 		}
+	}
+}
+
+@media (max-width: 549px) {
+	.services-main .five {
+		height: 300px;
+	}
+
+	.services-addons .container .row {
+	    margin-bottom: 0;
 	}
 
 	.process .container {
@@ -288,6 +317,5 @@ $font: 'Raleway', sans-serif;
 		}
 	}
 }
-
 
 
