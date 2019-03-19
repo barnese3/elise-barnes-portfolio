@@ -115,7 +115,7 @@ button {
   padding: 0 15px;
 }
 
-#last-nav-item-mobile button a {
+#last-nav-item-mobile a button {
   color: #000;
 }
 
@@ -559,7 +559,8 @@ html {
   transform-origin: 100% 100%;
 }
 
-.mobile-nav li a {
+.mobile-nav li a,
+#last-nav-item-mobile a button {
   color: #000;
   display: inline-block;
   overflow: hidden;
