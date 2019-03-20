@@ -441,6 +441,10 @@ $font: 'Raleway', sans-serif;
 	.portfolio-btn-contain {
 	    width: 100%;
 	}
+
+	.content img {
+		margin-left: 0;
+	}
 }
 
 .scroll-show-portfolio {
@@ -449,24 +453,29 @@ $font: 'Raleway', sans-serif;
 
 .content {
 	position: relative;
-	height: 375px;
+	height: 410px;
 	width: 49%;
 	display: inline-block;
 	margin: auto;
 	overflow: hidden;
+
+	img {
+		width: 300px;
+		margin-left: 90px;
+	}
 }
 
-.content:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    height: 75%;
-    width: 95%;
-    background: rgba(221,200,196,0.5);
-    z-index: -1;
-}
+// .content:after {
+//     content: "";
+//     position: absolute;
+//     bottom: 0;
+//     left: 50%;
+//     transform: translate(-50%);
+//     height: 75%;
+//     width: 95%;
+//     background: rgba(221,200,196,0.5);
+//     z-index: -1;
+// }
 
 // .content .content-overlay {
 // 	background: $accent;
@@ -715,9 +724,24 @@ $font: 'Raleway', sans-serif;
 	.home-portfolio .portfolio-item2, 
 	.home-portfolio .portfolio-item3,
 	.home-portfolio .portfolio-item4,
-	.home-portfolio .portfolio-item5,
-	.content {
+	.home-portfolio .portfolio-item5 {
 		height: 225px;
+	}
+
+	.content {
+		height: 285px;
+	}
+
+	.portfolio-btn-contain button {
+		margin-top: 0;
+	}
+
+	.service {
+	  margin: 20px 0;
+	}
+
+	#services {
+		padding: 30px 15px;
 	}
 }
 
