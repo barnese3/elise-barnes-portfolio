@@ -443,7 +443,7 @@ $font: 'Raleway', sans-serif;
 	}
 
 	.content {
-		height: 575px;
+		height: 410px;
 
 		img {
 			margin-left: 0;
@@ -453,7 +453,10 @@ $font: 'Raleway', sans-serif;
 			padding: 15px 25%;
 		}
 	}
+}
 
+#p-mobile .content.mobile {
+	height: 575px;
 }
 
 .scroll-show-portfolio {
@@ -687,7 +690,7 @@ $font: 'Raleway', sans-serif;
 
 @media (max-width: 650px) {
 	#p-mobile {
-		.content {
+		.content.mobile {
 			height: 600px;
 
 			p {
@@ -723,8 +726,14 @@ $font: 'Raleway', sans-serif;
 		height: 225px;
 	}
 
-	#p-mobile .content {
+	#p-mobile .content.mobile {
 		height: 500px;
+	}
+
+	#p-mobile {
+		.content {
+			height: 300px;
+		}
 	}
 
 	.portfolio-btn-contain button {
@@ -775,7 +784,7 @@ $font: 'Raleway', sans-serif;
 }
 
 @media (max-width: 500px) {
-	#p-mobile .content {
+	#p-mobile .content.mobile {
 		height: 550px;
 	}
 }
@@ -796,7 +805,7 @@ $font: 'Raleway', sans-serif;
     	// width: 21em;
     }
 
-    #p-mobile .content {
+    #p-mobile .content.mobile {
 		height: 600px;
 	}
 }
@@ -809,7 +818,7 @@ $font: 'Raleway', sans-serif;
 }
 
 @media (max-width: 340px) {
-    #p-mobile .content {
+    #p-mobile .content.mobile {
 		height: 650px;
 	}
 }
