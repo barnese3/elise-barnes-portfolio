@@ -442,9 +442,18 @@ $font: 'Raleway', sans-serif;
 	    width: 100%;
 	}
 
-	.content img {
-		margin-left: 0;
+	.content {
+		height: 575px;
+
+		img {
+			margin-left: 0;
+		}
+
+			p {
+			padding: 15px 25%;
+		}
 	}
+
 }
 
 .scroll-show-portfolio {
@@ -463,81 +472,15 @@ $font: 'Raleway', sans-serif;
 		width: 300px;
 		margin-left: 90px;
 	}
+
+	p {
+		padding: 15px 50px;
+	}
 }
 
-// .content:after {
-//     content: "";
-//     position: absolute;
-//     bottom: 0;
-//     left: 50%;
-//     transform: translate(-50%);
-//     height: 75%;
-//     width: 95%;
-//     background: rgba(221,200,196,0.5);
-//     z-index: -1;
-// }
-
-// .content .content-overlay {
-// 	background: $accent;
-// 	position: absolute;
-// 	height: 303px;
-// 	width: 100%;
-// 	top: 50%;
-// 	left: 50%;
-// 	-webkit-transform: translate(-50%, -50%);
-// 	-moz-transform: translate(-50%, -50%);
-// 	transform: translate(-50%, -50%);
-// 	opacity: 0;
-// 	-webkit-transition: all 0.4s ease-in-out 0s;
-// 	-moz-transition: all 0.4s ease-in-out 0s;
-// 	transition: all 0.4s ease-in-out 0s;
-// }
-
-// .content:hover .content-overlay{
-// 	opacity: 1;
-// }
-
-// .content-details {
-// 	position: absolute;
-// 	text-align: center;
-// 	padding-left: 1em;
-// 	padding-right: 1em;
-// 	width: 100%;
-// 	top: 50%;
-// 	left: 50%;
-// 	opacity: 0;
-// 	-webkit-transform: translate(-50%, -50%);
-// 	-moz-transform: translate(-50%, -50%);
-// 	transform: translate(-50%, -50%);
-// 	-webkit-transition: all 0.3s ease-in-out 0s;
-// 	-moz-transition: all 0.3s ease-in-out 0s;
-// 	transition: all 0.3s ease-in-out 0s;
-// }
-
-// .content:hover .content-details{
-// 	top: 50%;
-// 	left: 50%;
-// 	opacity: 1;
-// }
-
-// .content-details h3{
-// 	color: #fff;
-// 	font-weight: 500;
-// 	letter-spacing: 0.15em;
-// 	margin-bottom: 0.5em;
-// 	text-transform: uppercase;
-// 	font-family: $font;
-// }
-
-// .content-details p{
-// 	color: #fff;
-// 	font-size: 1.3em;
-// 	font-family: $font;
-// }
-
-// .fadeIn-top{
-//   top: 20%;
-// }
+.content-portfolio {
+	height: 600px;
+}
 
 .portfolio-btn-contain {
 	width: 49%;
@@ -678,6 +621,16 @@ $font: 'Raleway', sans-serif;
 	}
 }
 
+@media (max-width: 1175px) {
+	#p-mobile {
+		.content {
+				p {
+				padding: 15px 20%;
+			}
+		}
+	}
+}
+
 @media (max-width: 1030px) {
 
 	.home-portfolio .portfolio-item1, 
@@ -687,6 +640,26 @@ $font: 'Raleway', sans-serif;
 	.home-portfolio .portfolio-item5,
 	.content .content-overlay {
 		width: 65%;
+	}
+}
+
+@media (max-width: 970px) {
+	#p-mobile {
+		.content {
+				p {
+				padding: 15px 15%;
+			}
+		}
+	}
+}
+
+@media (max-width: 835px) {
+	#p-mobile {
+		.content {
+				p {
+				padding: 15px 10%;
+			}
+		}
 	}
 }
 
@@ -702,6 +675,28 @@ $font: 'Raleway', sans-serif;
 	}
 }
 
+@media (max-width: 730px) {
+	#p-mobile {
+		.content {
+				p {
+				padding: 15px 5%;
+			}
+		}
+	}
+}
+
+@media (max-width: 650px) {
+	#p-mobile {
+		.content {
+			height: 600px;
+
+			p {
+				padding: 15px 5%;
+			}
+		}
+	}
+}
+
 @media (max-width: 575px) {
 
 	.home-portfolio .portfolio-item1, 
@@ -713,9 +708,9 @@ $font: 'Raleway', sans-serif;
 		width: 97%;
 	}
 
-	.portfolio-btn-contain {
-		margin-top: 15px;
-	}
+	// .portfolio-btn-contain {
+	// 	margin-top: 15px;
+	// }
 }
 
 @media (max-width: 575px) {
@@ -728,8 +723,8 @@ $font: 'Raleway', sans-serif;
 		height: 225px;
 	}
 
-	.content {
-		height: 285px;
+	#p-mobile .content {
+		height: 500px;
 	}
 
 	.portfolio-btn-contain button {
@@ -779,6 +774,12 @@ $font: 'Raleway', sans-serif;
 	}
 }
 
+@media (max-width: 500px) {
+	#p-mobile .content {
+		height: 550px;
+	}
+}
+
 @media (max-width: 510px) {
 	.css-typing p:nth-child(1) {
 		font-size: 40px;
@@ -794,6 +795,10 @@ $font: 'Raleway', sans-serif;
     	font-size: 15px;
     	// width: 21em;
     }
+
+    #p-mobile .content {
+		height: 600px;
+	}
 }
 
 @media (max-width: 355px) {
@@ -801,6 +806,12 @@ $font: 'Raleway', sans-serif;
     	font-size: 14px;
     	// width: 21.5em;
     }
+}
+
+@media (max-width: 340px) {
+    #p-mobile .content {
+		height: 650px;
+	}
 }
 
 @media (max-width: 320px) {
