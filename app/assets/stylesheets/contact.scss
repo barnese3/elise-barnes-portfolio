@@ -34,6 +34,18 @@ $font: 'Raleway', sans-serif;
 .contact-desc {
     margin-bottom: 60px;
 
+    h1 {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 1em;
+        font-size: 4.5rem;
+
+        span {
+            color: $accent;
+            letter-spacing: -10px;
+        }
+    }
+
     p {
         width: 50%;
         margin: 0 auto;
@@ -134,13 +146,13 @@ form {
     padding-bottom: 500px;
 }
 
-// ::placeholder {
-//     color: #000;
-// }
-
-// ::value {
-//     color: #000;
-// }
+@media (max-width: 550px) {
+        .contact-desc {
+            h1 {
+                font-size: 3.5rem;
+            }
+    }
+}
 
 @media (max-width: 950px) {
     #contact-form .button {
@@ -149,7 +161,8 @@ form {
 }
 
 @media (max-width: 850px) {
-    .contact-desc p {
+    .contact-desc p,
+    .contact-desc h1 {
         width: 95%;
     }
 

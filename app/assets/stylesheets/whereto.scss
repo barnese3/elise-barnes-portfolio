@@ -13,10 +13,21 @@ $font: 'Raleway', sans-serif;
     background-repeat: no-repeat;
 }
 
+.services-h1 {
+    text-align: center;
+    margin-top: 75px;
+    font-size: 4.5rem;
+
+    span {
+        color: $accent;
+        letter-spacing: -10px;
+    }
+}
+
 .services-text {
 	width: 100%;
 	text-align: center;
-	padding: 150px 12%;
+	padding: 50px 12% 150px 12%;
 
 	p {
 		font-family: $font;
@@ -296,6 +307,12 @@ $font: 'Raleway', sans-serif;
 			height: 250px;
 		}
 	}
+
+	.services-h1 {
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
 }
 
 @media (max-width: 549px) {
