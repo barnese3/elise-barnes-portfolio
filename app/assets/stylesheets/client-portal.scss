@@ -1,4 +1,18 @@
+$accent: #DDC8C4;
+
 .client-portal {
 	padding: 100px 25% 0px 25%;
 	text-align: center;
+	font-weight: bold;
+
+	span {
+        color: $accent;
+        letter-spacing: -10px;
+    }
+}
+
+@media (max-width: 600px) {
+	.client-portal {
+		padding: 100px 10% 0px 10%;
+	}
 }

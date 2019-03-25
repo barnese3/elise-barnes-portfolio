@@ -194,6 +194,7 @@ $font: 'Raleway', sans-serif;
 		text-align: center;
 		font-size: 18px;
 		font-family: $font;
+		font-weight: bold;
 	}
 }
 
@@ -261,6 +262,7 @@ $font: 'Raleway', sans-serif;
 	p {
 	  margin: 1rem 0;
 	  line-height: 1.5;
+	  font-weight: bold;
 	}
 
 	a {
@@ -579,6 +581,7 @@ $font: 'Raleway', sans-serif;
 		p {
 			padding: 0 50px;
 			margin-top: 2.5rem;
+			font-weight: bold;
 		}
 	}
 
