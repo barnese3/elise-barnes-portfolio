@@ -112,7 +112,7 @@ $font: 'Raleway', sans-serif;
         border: 1.5px solid $accent;
     }
 
-    .submit {
+    .button {
         border-radius: 0px;
         color: #fff;
         background-color: $accent;
@@ -127,7 +127,7 @@ $font: 'Raleway', sans-serif;
         font-size: 14px;
     }
 
-    .submit:hover {
+    .button:hover {
         background-color: transparent;
         color: $accent;
         border-color: $accent;
@@ -156,7 +156,7 @@ form {
 }
 
 @media (max-width: 950px) {
-    #contact-form .submit {
+    #contact-form .button {
         width: 40%;
     }
 }
