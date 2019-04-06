@@ -429,7 +429,8 @@ $font: 'Raleway', sans-serif;
 	}
 
 	.portfolio-item1 {
-		background-image: image-url("deli@2x.png");
+		// background-image: image-url("deli@2x.png");
+		background-image: image-url("PPP-mockup-devices.png");
 	}
 
 	.portfolio-item5 {
@@ -479,6 +480,15 @@ $font: 'Raleway', sans-serif;
 	img {
 		width: 300px;
 		margin-left: 90px;
+	}
+
+	#ppp img {
+		width: 200px;
+	}
+
+	#ppp-logo img,
+	#ppp-logo-mobile img {
+		width: 100px;
 	}
 
 	p {
@@ -590,7 +600,8 @@ $font: 'Raleway', sans-serif;
 		padding: 100px 100px 0 100px;
 
 		.portfolio-item1 {
-			background-image: image-url("d-mockup.jpg");
+			// background-image: image-url("d-mockup.jpg");
+			background-image: image-url("PPP-mockup-devices.png");
 			background-position: top;
 			height: 400px;
     		width: 550px;
