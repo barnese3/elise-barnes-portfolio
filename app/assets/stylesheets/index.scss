@@ -3,6 +3,10 @@ $font: 'Raleway', sans-serif;
 
 @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
 
+#sp-circle {
+	text-align: center;
+}
+
 .hero-image {
 	position: relative;
 	height: 75vh;

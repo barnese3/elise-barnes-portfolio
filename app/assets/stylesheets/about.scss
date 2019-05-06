@@ -197,7 +197,7 @@ $font: 'Raleway', sans-serif;
 .about-button {
     text-align: center;
     margin-top: 65px;
-    margin-bottom: 150px;
+    margin-bottom: 200px;
 
     button {
         border-radius: 0px;
@@ -231,6 +231,7 @@ $font: 'Raleway', sans-serif;
 
 #recent-work-button {
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 @media (max-width: 600px) {
