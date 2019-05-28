@@ -234,6 +234,12 @@ $font: 'Raleway', sans-serif;
     margin-top: 0;
 }
 
+@media (max-width: 549px) {
+    .about-button {
+        margin-bottom: 300px;
+    }
+}
+
 @media (max-width: 600px) {
     .testimonials p {
         width: 90%;
