@@ -434,7 +434,8 @@ $font: 'Raleway', sans-serif;
 
 	.portfolio-item1 {
 		// background-image: image-url("deli@2x.png");
-		background-image: image-url("PPP-mockup-devices.png");
+		//background-image: image-url("PPP-mockup-devices.png");
+		background-image: image-url("quin-devices.png");
 	}
 
 	.portfolio-item5 {
@@ -487,12 +488,20 @@ $font: 'Raleway', sans-serif;
 	}
 
 	#ppp img {
-		width: 200px;
+		width: 180px;
 	}
 
 	#ppp-logo img,
 	#ppp-logo-mobile img {
-		width: 100px;
+		width: 200px;
+	}
+
+	#quin-logo img {
+		width: 250px;
+	}
+
+	#warroad-logo img {
+		width: 200px;
 	}
 
 	p {
@@ -601,11 +610,12 @@ $font: 'Raleway', sans-serif;
 
 	.home-portfolio {
 		text-align: left;
-		padding: 100px 100px 0 100px;
+		padding: 100px;
 
 		.portfolio-item1 {
 			// background-image: image-url("d-mockup.jpg");
-			background-image: image-url("PPP-mockup-devices.png");
+			// background-image: image-url("PPP-mockup-devices.png");
+			background-image: image-url("quin-devices.png");
 			background-position: top;
 			height: 400px;
     		width: 550px;
@@ -756,7 +766,7 @@ $font: 'Raleway', sans-serif;
 
 @media (max-width: 1350px) {
 	.portfolio-page .home-portfolio {
-		padding: 100px 5% 0 5%;
+		padding: 100px 5%;
 	}
 
 	.portfolio-page .content p {
