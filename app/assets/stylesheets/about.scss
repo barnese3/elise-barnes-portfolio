@@ -236,10 +236,11 @@ $font: 'Raleway', sans-serif;
 
 @media (max-width: 549px) {
     .about-button {
-        margin-bottom: 300px;
+        margin-bottom: 300px !important;
     }
 
-    .services-contact-form form {
+    .services-contact-form form,
+    #contact-form {
         padding-bottom: 300px !important;
     }
 }
