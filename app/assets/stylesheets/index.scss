@@ -239,7 +239,7 @@ $font: 'Raleway', sans-serif;
 
 #services {
 	max-width: 1000px;
-	margin: 0 auto 150px auto;
+	margin: 0 auto 120px auto;
 	text-align: center;
 	padding: 30px;
 
@@ -881,6 +881,12 @@ $font: 'Raleway', sans-serif;
 	}
 }
 
+@media (max-width: 600px) {
+	.slider .item.active .item-content p {
+		width: 70%;
+	}
+}
+
 @media (max-width: 575px) {
 
 	.home-portfolio .portfolio-item1, 
@@ -973,6 +979,12 @@ $font: 'Raleway', sans-serif;
 @media (max-width: 510px) {
 	.css-typing p:nth-child(1) {
 		font-size: 40px;
+	}
+}
+
+@media (max-width: 420px) {
+	.slider {
+		height: 900px;
 	}
 }
 
