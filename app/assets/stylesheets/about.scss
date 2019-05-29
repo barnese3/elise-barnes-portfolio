@@ -263,7 +263,8 @@ $font: 'Raleway', sans-serif;
         background-position: left;
     }
 
-    .testimonials {
+    .testimonials,
+    .slider > .item {
         background-attachment: scroll;
     }
 }
