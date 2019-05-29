@@ -199,6 +199,10 @@ $font: 'Raleway', sans-serif;
 		font-size: 18px;
 		font-family: $font;
 		font-weight: bold;
+
+		a {
+			color: $accent;
+		}
 	}
 }
 
