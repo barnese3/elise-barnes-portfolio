@@ -345,6 +345,7 @@ $font: 'Raleway', sans-serif;
   z-index: 100;
   text-align:center;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 
 .slider .slider-control:hover{
