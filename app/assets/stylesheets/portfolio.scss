@@ -64,6 +64,62 @@ $font: 'Raleway', sans-serif;
     margin-top: 10em;
 }
 
+
+
+
+#portfolio-page-container {
+    .portfolio-page {
+        .home-portfolio {
+            text-align: center;
+
+            .port-item-info {
+                margin-bottom: 75px;
+            }
+
+            .full-mockup {
+                float: none;
+            }
+
+            .portfolio-btn-contain button {
+                background: #000;
+                padding: 5px 40px;
+            }
+
+            .content-img {
+                img {
+                    box-shadow: 0 0 20px rgba(0,0,0,.5);
+                }
+            }
+        }
+
+        // .content:not(:nth-last-child(1)):after {
+        //     content: '';
+        //     position: absolute;
+        //     bottom: 0;
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        //     width: 90%;
+        //     max-width: 500px;
+        //     height: 2px;
+        //     background: #000;
+        // }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 500px) {
     .portfolio-desc {
         h1 {
