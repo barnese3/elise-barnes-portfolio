@@ -74,6 +74,12 @@ $font: 'Raleway', sans-serif;
 
             .port-item-info {
                 margin-bottom: 75px;
+
+                h3 {
+                    font-size: 25px;
+                    font-weight: bolder;
+                    margin: 50px 0;
+                }
             }
 
             .full-mockup {
@@ -91,18 +97,6 @@ $font: 'Raleway', sans-serif;
                 }
             }
         }
-
-        // .content:not(:nth-last-child(1)):after {
-        //     content: '';
-        //     position: absolute;
-        //     bottom: 0;
-        //     left: 50%;
-        //     transform: translateX(-50%);
-        //     width: 90%;
-        //     max-width: 500px;
-        //     height: 2px;
-        //     background: #000;
-        // }
     }
 }
 
