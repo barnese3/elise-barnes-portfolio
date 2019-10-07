@@ -35,7 +35,7 @@ $(document).ready(function() {
 });
 
 //fade-in portfolio elements at different speeds
-var speeds = [500, 1000, 1500];
+var speeds = [50, 100, 500];
 $(document).ready(function() {
     $(window).scroll( function(){
         $('.scroll-show-portfolio').each( function(i){
@@ -51,3 +51,8 @@ $(document).ready(function() {
 });
 
 console.log("Do you come here often?");
+
+
+
+
+
